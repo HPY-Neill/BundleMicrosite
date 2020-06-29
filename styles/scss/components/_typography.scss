@@ -73,6 +73,7 @@
 .hpy_modular h4 {
 	font-size: 24px;
 	font-weight: normal;
+	letter-spacing: -.05em;
 	
   @media only screen and (max-width: $responsive-sm) {	
 		font-size: 20px;
@@ -81,8 +82,16 @@
 	
 
 
-.hpy_modular .half-bot-margin {
-	margin-bottom: 20px;
+.hpy_modular .sm-bot-margin {
+	margin-bottom: 15px !important;
+}
+
+.hpy_modular .lg-bot-margin {
+	margin-bottom: 50px !important;
+}
+
+.hpy_modular .xl-bot-margin {
+	margin-bottom: 80px !important;
 }
 
 
@@ -311,9 +320,12 @@
 			}
 		}
 	}
-	
-	
-	
+
+	.check-item {
+		line-height: 2 !important;
+	}
+
+
 	// icons	 
 	.circle-check,
 	.checkmark:not(ul) {

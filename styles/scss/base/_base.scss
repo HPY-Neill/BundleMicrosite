@@ -4,6 +4,19 @@ html {
   scroll-behavior: smooth; // getting jump menus to smooth scroll
 }
 
+body {
+	margin: 0;
+}
+
+#slides {
+
+	h2 {
+		margin-bottom: 10px;
+	}
+	.hp {
+		margin-bottom: 40px;
+	}
+}
 
 .hpy_modular {	
 	font: $font-size-default/1.4 $primary-font;

@@ -49,12 +49,11 @@
 	
 	.image {
 		overflow: hidden;
-		max-height: 205px; 
 		
 		img {
-			width: 100%;
-			height: auto;
 			transition: transform 0.25s ease-in-out;
+			max-width: initial;
+			height: initial;
 			
 			&:hover {
 				transform: scale(1.03);

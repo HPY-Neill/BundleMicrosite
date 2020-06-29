@@ -27,7 +27,11 @@
 		  display: block;
 		  float: left;
 	  }
-  }		
+  }
+
+  .button-container {
+  	padding-top: 30px;
+  }
 }
 
 
@@ -36,11 +40,9 @@
 // dot tabs
 .rslides_tabs {
   @include list-style(inline);
-	position: absolute;
 	width: 100%;
 	text-align: center;
 	z-index: 1000;
-	margin-top: -80px !important;
 	
 	li {
 		margin: 0 5px;
@@ -66,18 +68,13 @@
 
 
 // text tabs
-.hpy_modular.page-homepage .intro-nav {
-	position: absolute;
+.hpy_modular.page-micro-main .slider-nav {
 	z-index: 1;
 	width: 100%;
 	text-align: center;
-	width: 90%;
 	min-height: 70px;
 	max-width: 1120px; 
-	margin: -310px auto 0 !important; 
 	z-index: 999998;
-	left: 50%;
-	transform: translate(-50%, 0);
 	border-radius: 5px 5px 0 0 !important;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -120,7 +117,7 @@
 				font-size: 16px;
 				color: #565a5e;
 				font-weight: bold;
-				padding: 20px 20px 25px;
+				padding: 20px 50px 25px;
 				border-top: 6px solid transparent;
 
 			  @media only screen and (max-width: $responsive-md) {

@@ -1,0 +1,21 @@
+// NETSPEND
+ 
+
+.hpy_modular.page-netspend {
+	
+	.circle-check {
+		float: left;
+    margin-right: 15px;
+    margin-top: 4px;
+		
+		+ div {
+			padding-left: 55px;
+			
+			h3 {
+				margin-bottom: 9px;
+			}
+		}
+	}	
+	
+	
+}

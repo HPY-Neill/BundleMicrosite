@@ -1,0 +1,44 @@
+// MIXINS
+
+
+// flex box setup
+@mixin flex($direction: row, $justify: flex-start, $align-items: stretch, $align-content: flex-start, $flex-wrap: wrap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align-items;
+	align-content: $align-content;
+	flex-wrap: $flex-wrap;
+}
+
+
+
+
+// position
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+
+
+// list styles
+@mixin list-style($inline) {
+	list-style: none;
+	margin: 0;
+	padding: 0 !important;
+
+	li {
+		@if $inline {
+			list-style: none;
+			display: inline-block;
+			vertical-align: top;		
+		} @else {		
+			list-style: none;
+		}
+	}
+}

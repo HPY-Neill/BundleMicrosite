@@ -1,0 +1,36 @@
+// FEATURES
+ 
+
+// hero
+.hpy_modular {
+
+	
+	#features img {
+		max-width: 200px;
+		height: 150px !important;
+	}
+	
+
+	#features {
+		padding-top: 10px;
+		
+		.col-6 {
+				padding: 35px 0;
+		}
+		
+
+	  @media only screen and (max-width: $responsive-lg) {
+			.hpy_grid {
+				margin-top: 0 !important;
+				padding: 20px 0;
+				text-align: center;
+				
+				img {
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	
+}

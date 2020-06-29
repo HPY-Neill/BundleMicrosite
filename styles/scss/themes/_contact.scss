@@ -1,0 +1,63 @@
+// CAPTAIL and CAPITAL CARES
+ 
+
+.hpy_modular.page-contact {
+
+	.hero {
+		min-height: 260px;
+		padding: 0;
+		background: #324a5e;
+	}
+	
+
+	textarea,
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="tel"] {
+		border: 1px solid #E5E5E5;
+	}
+	
+	
+	.support-list {
+		@include list-style(null);
+		color: #53565a;
+		
+		li {
+			margin-bottom: 35px !important;
+		}
+		
+		h4 {
+			font-size: 18px;
+			margin-bottom: 5px;
+			font-weight: bold;
+			
+			a {
+				color: $primary-2;
+				transition: color 0.2s linear, text-decoration 0.2s linear;
+				border-bottom: 2px solid transparent !important;
+				
+				&:hover {
+					color: $primary-2;
+					text-decoration: none;
+					border-bottom-color: $primary-2 !important;
+				}
+			}
+		}
+		
+		p {
+			line-height: 1.7 !important;
+			
+			a {
+				color: #53565a;
+				border-bottom-color: #53565a;
+			
+				&:hover {
+					color: $black;
+					border-bottom-color: $black;
+				}
+			}
+		}
+	}
+
+}

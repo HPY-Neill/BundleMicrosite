@@ -1,0 +1,64 @@
+// VALUE STATEMENTS
+ 
+
+.hpy_modular {  
+
+	#value-statements {
+		padding-bottom: 0;
+		margin-bottom: 80px;
+		background-color: $white;
+
+	  @media only screen and (max-width: $responsive-lg) {
+		
+			.hpy_grid {
+				align-items: stretch;
+			}
+		
+			.col-6 {
+				padding: 25px 10px;
+			}
+		
+			.col-5 {
+				overflow: hidden;
+		    position: relative;
+				
+				img {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    width: auto !important;
+			    height: auto !important;
+			    min-width: auto !important;
+			    min-height: auto !important;
+			    max-width: none !important;
+			    max-height: none !important;
+			    display: block;
+					object-fit: cover;
+				}
+			}
+		} 
+
+	  @media only screen and (max-width: $responsive-md) {
+			.col-5.order-1-sm {
+				padding: 0 !important;
+				
+				img {
+			    position: static;
+			    top: auto;
+			    left: auto;
+			    right: auto;
+			    bottom: auto;
+			    display: block;
+					max-width: 450px !important;
+					object-fit: cover;
+				}
+			}
+			.col-6.order-2-sm {
+				padding: 15px !important;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,43 @@
+// TERMINALs PAGE
+ 
+
+.hpy_modular.page-terminals {
+	
+	#freedom {
+		padding-bottom: 30px;
+	}
+	
+	.card-flip {
+	  width: 100%;
+
+		.front,
+		.back {
+			padding: 55px 0;
+			
+			p {
+				padding: 0 10px;
+			}
+		}
+	}
+	
+
+	
+	
+	section#terminalplus .contents {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/terminals/terminalplus-bg.jpg') no-repeat scroll top center;
+		padding-top: 280px;
+		margin-bottom: 200px;
+		
+		.bg-white {
+			padding: 50px;
+			box-sizing: border-box;
+		}
+	}
+	
+	
+	section#portico-vertual {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/terminals/portico-virtual-bg.jpg') no-repeat scroll top center;
+		min-height: 700px;
+	}
+	
+}

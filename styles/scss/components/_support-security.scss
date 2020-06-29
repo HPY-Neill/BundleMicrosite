@@ -1,0 +1,17 @@
+// SUPPORT AND SECURITY
+
+
+.hpy_modular .support-security {
+	margin: 0;
+	height: 270px;
+	background-image: linear-gradient(to left, #FFFFFF 0%, #F1F1F2 50%, #FFFFFF 100%);
+		
+	h3 {
+		margin: 25px 0 10px !important;
+		font-size: 20px !important;
+	}
+
+  @media only screen and (max-width: $responsive-md) {
+		height: 540px;
+	}	
+}

@@ -1,0 +1,388 @@
+// TYPOGRAPHY
+
+
+// Headings
+
+.hpy_modular h1,
+.hpy_modular h2,
+.hpy_modular h3,
+.hpy_modular h4 {
+	margin: 0 0 $bottom-margin; 
+	font: 900 45px/1.2 $primary-font;
+	text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+		
+	a {
+		color: inherit;
+		text-decoration: none !important;
+		border: none !important;
+		
+		&:hover {
+			color: inherit;
+			text-decoration: none !important;
+			border: none !important;
+		}
+	}
+	
+  @media only screen and (max-width: $responsive-lg) {		
+		br {
+			display: none;
+		}
+	}
+}
+			
+.hpy_modular h1 {
+	font-size: 62px;
+	letter-spacing: -2px;
+	margin-bottom: 16px !important;
+	
+  @media only screen and (max-width: $responsive-md) {		
+		font-size: 55px;
+	}
+	
+  @media only screen and (max-width: $responsive-sm) {	
+		font-size: 42px;
+	}
+}	
+
+.hpy_modular h2 {
+	font-size: 45px;
+	font-weight: 400;
+	letter-spacing: -2px;
+	margin-bottom: 50px;
+	
+  @media only screen and (max-width: $responsive-md) {		
+		font-size: 38px;
+	}
+	
+  @media only screen and (max-width: $responsive-sm) {	
+		font-size: 35px;
+	}
+}
+	
+.hpy_modular h3 {
+	font-size: 32px;
+	
+  @media only screen and (max-width: $responsive-sm) {	
+		font-size: 25px;
+	}
+}	
+	
+.hpy_modular h4 {
+	font-size: 24px;
+	font-weight: normal;
+	
+  @media only screen and (max-width: $responsive-sm) {	
+		font-size: 20px;
+	}
+}	
+	
+
+
+.hpy_modular .half-bot-margin {
+	margin-bottom: 20px;
+}
+
+
+
+
+/* GENERAL CALLINGS
+------------------------------------------------------------ */	
+
+.hpy_modular {	
+	
+	p { 
+		margin: 0 0 $bottom-margin 0; 
+		font: 16px/1.4 $primary-font;
+	
+	  @media only screen and (min-width: $responsive-sm) {	
+			// &:last-child {
+			// 	margin-bottom: 0;
+			// }
+		}
+	}
+	
+	// sup
+	sup {
+		//vertical-align: text-top;
+	}
+
+	// font weights
+	strong, 
+	b {
+		font-weight: 700;
+	}
+
+	// text colors
+	.text-white {
+		color: $white;
+	}
+	.text-red {
+		color: $primary-1;
+	}
+	.text-black {
+		color: $black;
+	}
+	.text-blue {
+		color: $primary-2;
+	}
+	.text-dark-blue {
+		color: $primary-3;
+	}
+	.text-dark-grey {
+		color: $primary-5;
+	}
+	.text-teal {
+		color: #2c686a;
+	}
+	.text-teal-dark {
+		color: #809ca7;
+	}
+	.text-gold {
+		color: $secondary-1;
+	}
+
+	// text align
+	.text-center,
+	.center {
+		text-align: center;
+	}
+	  @media only screen and (max-width: $responsive-xs) {		
+	    .text-center-xs {
+				text-align: center;
+	    }
+	  }
+	
+	  @media only screen and (max-width: $responsive-sm) {		
+	    .text-center-sm {
+				text-align: center;
+	    }
+	  }
+	
+	  @media only screen and (max-width: $responsive-md) {		
+	    .text-center-md {
+				text-align: center;
+	    }
+	  }
+
+	.text-right {
+		text-align: right;
+	}
+
+	.text-left {
+		text-align: left;
+	}
+
+	// small
+	.text-small {
+		font-size: 11px !important;
+		line-height: 14px !important;
+	}
+	
+	// hr
+	hr {
+		border-collapse: collapse;
+		border: 0px solid #efefef;
+		border-width: 1px 0 0;
+		margin: 50px 0 60px !important;
+		width: 100% !important;
+		display: block;
+	}
+
+	// images
+	img {
+		vertical-align: bottom;
+		max-width: 100%;
+		height: auto;
+	}
+
+	// lists
+	ul {
+		margin: 0 0 $bottom-margin 0;
+		padding-left: 40px;
+	
+		&:last-child { 
+			margin: 0; 
+		}	
+	
+		li {
+			margin-bottom: 15px;
+			font-size: 16px !important;
+		}
+	
+		ol,
+		ul {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	ol {
+		margin: 0 0 $bottom-margin 0;
+		padding-left: 40px;
+	
+		li {
+			margin-bottom: 15px;
+			font-size: 16px !important;
+		}
+	}
+	
+	.testimonial {
+		padding: 30px 40px 20px 0;
+
+	  @media only screen and (max-width: $responsive-md) {		
+			padding: 30px 35px;
+			text-align: center;
+		}
+		
+		
+		p {
+			font-size: 18px !important;
+
+		  @media only screen and (max-width: $responsive-md) {		
+				font-size: 17px !important;
+			}
+		}
+	}
+	
+	
+	// link change
+	.tiers {
+		position: relative;		
+		
+		.first-tier {
+			transition: all 0.1s linear;
+			
+			a {
+				padding: 15px 0;
+				border: none !important;
+			}
+		}
+	
+		.second-tier {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			transition: all 0.2s linear;
+			
+			a {
+				margin: 0 15px;
+			}
+		}
+		
+		&:hover {
+			.first-tier {
+				opacity: 0;
+			}
+	
+			.second-tier {
+				top: 0;
+				opacity: 1;
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	// blackout background
+	.blackout-bg {
+		display: inline-block;
+		padding: 15px 20px;
+		background: rgba(0,0,0,.5);
+		max-width: 650px;
+		font-size: 20px !important;
+		line-height: 1.5;
+		margin-bottom: 0;
+		letter-spacing: 0;
+		font-weight: normal;
+		
+		a {
+			border-bottom: 1px solid rgba(255,255,255,.5) !important;
+			transition: all 0.2s linear;
+			
+			&:hover {
+				border-bottom: 1px solid rgba(255,255,255,1) !important;
+			}
+		}
+	}
+	
+	
+	
+	// icons	 
+	.circle-check,
+	.checkmark:not(ul) {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-check_blue.svg') center center no-repeat;
+	}
+	
+	.checkmark:not(ul) {
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		border-radius: 50%;
+		background-size: 160%;
+	}
+	
+	
+	// for UL
+	ul.checkmark {
+		@include list-style(null);
+		
+		li {
+			position: relative;
+			padding-left: 31px;
+			margin-bottom: 20px !important;
+			
+			&::before {
+				display: block;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: -2px;
+				width: 20px;
+				height: 20px;
+				overflow: hidden;
+				border-radius: 50%;
+				background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-check_blue.svg') center center no-repeat;
+				background-size: 160%;
+			}
+		}
+		
+		&.checkmark_green {
+			li::before {
+				background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-check_teal.svg') center center no-repeat;
+				background-size: 160%;
+			}
+		}
+		
+		&.checkmark_white {
+			li::before {
+				background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-check_white.svg') center center no-repeat;
+				background-size: 160%;
+			}
+		}
+	}
+
+	 
+	.icon-circle-plus,
+	.icon-circle-close {
+		display: inline-block;
+		width: 38px;
+		height: 38px;
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-plus_blue.svg') center center no-repeat;
+		cursor: pointer;
+	}
+	
+	.icon-circle-close {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-close_grey.svg') center center no-repeat;
+	}
+}
+

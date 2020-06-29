@@ -1,0 +1,75 @@
+// HERO
+
+.hpy_modular .hero {
+	color: $white;	
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	padding: 40px 0 10px;
+
+  @media only screen and (max-width: $responsive-md) {
+		min-height: 500px;
+	}	
+  @media only screen and (max-width: $responsive-xs) {
+		min-height: 450px;
+	}	
+	
+	.contents {
+		z-index: 99999 !important;
+		
+		p {
+			font-size: 20px !important;
+	
+			@media screen and (max-width: $responsive-md) {
+				font-size: 18px !important;
+		  }
+		}
+	}		
+			
+	a {
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	
+	h2 {
+		margin-bottom: $bottom-margin !important;
+	}
+}
+
+
+
+
+// hero with video background
+.hpy_modular .hero.hero_video {
+	video {
+		display: none;
+	}
+	
+	@media screen and (min-width: $responsive-md) {
+		overflow: hidden;
+		position: relative;
+	
+		video {
+			display: block;
+			position: absolute;
+			min-width: 100%;
+			height: auto;
+			width: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 99;
+		}
+		
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: "";
+			background: rgba(0,0,0, .2);
+			z-index: 1000;
+		}
+	}
+}

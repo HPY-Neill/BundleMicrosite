@@ -1,0 +1,168 @@
+// BASE
+
+html {
+  scroll-behavior: smooth; // getting jump menus to smooth scroll
+}
+
+
+.hpy_modular {	
+	font: $font-size-default/1.4 $primary-font;
+	color: $primary-text-color;
+	
+	// for covid update
+	padding-top: 45px;
+	
+	background: $white url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/page-bg.svg') repeat-y fixed top center;
+	background-size: cover;	
+  transition: 0s linear;
+	transition-property: background-position;
+	padding-right: 0 !important;
+	
+		@media screen and (max-width: $responsive-md) {
+		  padding-top: 59px;
+	  }
+
+
+	// highlights
+	::selection {
+		background: $primary-1;
+		color: $white;
+	}
+
+	// sections
+	section {
+		width: 100%;	
+		box-sizing: border-box;
+	}
+	
+	// content 
+	.contents {
+		width: 90%;
+		max-width: $responsive-max; 
+		margin: auto; 
+		position: relative;
+	}
+	
+	// anchor points
+	.anchor {
+	  display: block;
+	  height: 40px;
+	  margin-top: -40px;
+		visibility: hidden;
+	
+		@media screen and (max-width: $responsive-md) {
+		  height: 10px;
+		  margin-top: -10px;
+	  }
+	}
+	
+	// content areas
+	.content-area {
+		margin: 0;
+		padding: 80px 0 90px;
+	
+	  @media only screen and (max-width: $responsive-md) {	
+			padding: 50px 0 20px;
+		}
+	}
+	
+	
+	// content area
+	 
+	// bg colors
+	.bg-lightgrey {
+		background-color: #F5F5F5 !important;
+	}	
+	.bg-black {
+		background-color: $black !important;
+	}
+	.bg-grey {
+		background-color: #E5E5E5 !important;
+	}	
+	.bg-teal {
+		background-color: $primary-6 !important;
+	}
+	.bg-white {
+		background-color: $white !important;
+	}
+	
+	
+	// background color breaks
+	.background-breaker_white,
+	.background-breaker_teal {
+		position: relative;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: auto;
+			background: $white;
+			height: 250px;
+	
+		  @media only screen and (max-width: $responsive-md) {	
+				display: none;
+			}
+		}
+	}
+	
+	.background-breaker_white::before {
+		background: $white;
+	}
+	
+	.background-breaker_teal::before {
+		background: $primary-6;
+		height: 280px;
+	}
+	
+	
+	// parallax
+	.parallax-1,
+	.parallax-2,
+	.parallax-3,
+	.parallax-4,
+	.parallax-5 {
+		position: relative;
+	}
+	
+	// extra margins
+	.margin-bot-none {
+		margin-bottom: 0 !important;
+	}
+	.margin-bot-big {
+		margin-bottom: 50px !important;
+	}
+
+  @media only screen and (min-width: $responsive-md) {
+		.negative-top-150 {
+			margin-top: -150px;
+		}
+	}
+
+	
+	// show and hide depending on monitor size
+	
+	// desktop
+	.show-desktop {display: block;}	
+	.hide-desktop {display: none;}	
+
+	@media only screen and (max-width: $responsive-md) {	
+		.show-md {display: block;}
+		.hide-md {display: none;}
+	}
+
+	@media only screen and (max-width: $responsive-sm) {	
+		.show-sm {display: block;}
+		.hide-sm {display: none;}
+	}
+
+	@media only screen and (max-width: $responsive-xs) {	
+		.show-xs {display: block;}
+		.hide-xs {display: none;}
+	}
+	
+}
+
+

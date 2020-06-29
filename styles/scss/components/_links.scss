@@ -1,0 +1,162 @@
+// LINKS
+
+.hpy_modular a {
+	color: $primary-2;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: color 0.2s linear, text-decoration 0.2s linear;
+	
+	&:hover {
+		color: $primary-2;
+		text-decoration: none;
+		border-bottom-color: $primary-2;
+	}
+	
+	img {
+		vertical-align: bottom;
+	}
+	
+	&.no-border {
+		border-bottom: none !important;
+	}
+}
+	
+	
+// specials
+.link-arrow {
+	position: relative;
+	
+	&.link-arrow_back::before,
+	&::after {
+		display: inline-block;
+		content: "";
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/icon-link-arrow.svg?modified=20190509134500') no-repeat scroll top left;
+		background-size: 6px 9px;
+		width: 6px;
+		height: 9px;
+		position: absolute;
+		top: 50%;
+		margin: -4px 0 0 8px;	
+		transition: transform 0.2s linear, opacity 0.2s linear, color 0.2s linear;		
+		opacity: .5;
+	}
+	
+	// movement
+	&:hover::after {
+    transform: translateX(2px);
+		opacity: 1;
+	}
+	
+	
+	// rotate down
+	&.arrow-down:hover::after {
+    transform: rotate(90deg);
+		opacity: 1;
+	}
+	
+	// if the link is wrapping
+	&.arrow-wrapping::after {
+		top: 0;
+		margin-top: 30px;
+	}
+	
+	
+	// red arrow
+	&.link-arrow_red {
+		color: $primary-1 !important;
+		
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/icon-link-arrow-red.svg?modified=20190509134500');
+		}
+		
+		&:hover {
+			border-bottom-color: $primary-1;
+			opacity: 1;
+		}			
+	}
+	
+	
+	// white arrow
+	&.link-arrow_white {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/icon-link-arrow-white.svg?modified=20190509134500');
+		}	
+	}
+	
+	
+	// grey arrow
+	&.link-arrow_grey {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-gray.svg');
+		}	
+	}
+	
+	
+	// green arrow
+	&.link-arrow_green {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-green.svg');
+		}	
+	}
+	
+	
+	// orange arrow
+	&.link-arrow_orange {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-orange.svg');
+		}	
+	}
+	
+	
+	// yellow arrow
+	&.link-arrow_yellow {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-yellow.svg');
+		}	
+	}
+	
+	
+	// purple arrow
+	&.link-arrow_purple {			
+		&::after {
+			background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-purple.svg');
+		}	
+	}
+	
+	
+	// to top
+	&.link-to-top:hover::after {
+    transform: rotate(-90deg);
+		opacity: 1;
+	}
+	
+	
+	// back button
+	&.link-arrow_back {
+		&::after {
+	    display: none;
+		}
+		
+		&::before {
+			position: absolute;
+			top: 50%;
+			margin: -5px 0 0 -13px;	
+	    transform: rotate(-180deg);
+			background: url('https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-link-arrow-gray.svg') no-repeat scroll top left;
+		}
+		
+		&:hover::before {
+	    transform: translateX(-2px) rotate(-180deg);
+			opacity: 1;
+		}
+	}
+	
+}
+
+.link-container {
+	a {
+		margin-right: 40px;
+	}
+}
+

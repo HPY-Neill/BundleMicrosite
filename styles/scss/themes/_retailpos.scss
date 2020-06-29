@@ -1,0 +1,47 @@
+// RETAIL POS
+
+
+.hpy_modular.page-retailpos {
+	
+	#selector {
+		overflow: hidden;
+		
+		.content .col-5 p {
+			margin-bottom: 0;
+		}
+	}
+
+	#features {
+		padding-top: 60px;
+		
+		img {
+			max-width: 300px;
+			height: 225px !important;
+		}
+	}
+
+	
+	#findingdealers {
+		background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/retailpos/finding-dealers_bg.jpg');	
+		
+		h3 {
+			font-size: 36px;
+		}
+		
+		a {
+			border-bottom-color: transparent !important;
+			
+			&:hover {
+				border-bottom-color: #0071CE !important;
+			}
+		}
+	}
+
+	
+	#posintegration {
+		.circle-check {
+			float: right;
+		}
+	}
+
+}

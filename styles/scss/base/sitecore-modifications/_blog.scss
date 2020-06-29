@@ -1,0 +1,87 @@
+// SITE CORE MODIFICATIONS --- BLOG
+
+
+/* getting the font size the same on blog post lists */
+#XB.single-blog-post-detail ul li {
+	font-size: 14px !important;
+	margin-bottom: 5px;
+}
+
+
+// pull quote
+.blog__callout {
+	font-size: 24px; 
+	line-height: 1.4; 
+	padding: 22px 3%;
+}
+
+
+// pagination
+#XB .pagination a {
+  display: inline-block;
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+  margin: 0 3px;
+	
+	&:hover {
+		border: 1px solid #ccc;
+	}
+}
+
+
+// single post spacing
+#XB .single-post {
+	padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+
+// title size
+#XB-RecentBlog,
+#XB-TagCloud {
+
+	h3 {
+		border: none;
+		padding-bottom: 0;
+		font-size: 20px;
+		color: #333;
+	}	
+	
+}
+
+
+// fixing submit button
+#XB-TextSearch input[type="submit"] {
+	margin-left: 0 !important;
+	
+	&:hover {
+		background: #337ab7;
+	}
+}
+
+
+// right side tweaks
+#XB-TextSearch,
+#XB-RecentBlog,
+#XB-TagCloud {
+	margin: 10px 0 40px;
+	
+	a {
+		color: #333 !important;
+		
+		&:hover {
+			color: #337ab7 !important;
+		}
+	}
+}
+
+
+
+// hiding things
+#XB-RecentBlog .authorheading,
+#XB-CategoryList {
+	display: none;
+}
+
+
+

@@ -1,0 +1,107 @@
+// CARDS
+
+
+.circle-card {
+	background: #F5F5F5;
+	width: 325px;
+	height: 325px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: auto;
+	
+	img {
+		max-width: 40% !important;
+		max-height: 40% !important;
+	}
+
+  @media only screen and (max-width: $responsive-lg) {		
+		width: 250px;
+		height: 250px;
+		
+		img {
+			max-width: 45% !important;
+			max-height: 45% !important;
+		}
+  }
+
+  @media only screen and (max-width: $responsive-md) {		
+		width: 200px;
+		height: 200px;
+  }
+	
+	
+	&.circle-card_small {
+		width: 250px;
+		height: 250px;
+		background: $white;
+	}
+}
+
+
+
+.card {
+	background: $white;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 50px;
+	
+	.image {
+		overflow: hidden;
+		max-height: 205px; 
+		
+		img {
+			width: 100%;
+			height: auto;
+			transition: transform 0.25s ease-in-out;
+			
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+	}
+	
+	.content {
+		padding: 30px;
+	}
+}
+
+
+
+.standout {
+	display: inline-block;
+	padding: 25px 50px 0;
+	border-radius: $border-radius;
+	
+	p {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.rounded {
+	background: $white;
+	border-radius: $border-radius;
+	overflow: hidden;
+	box-shadow: 0 3px 4px rgba(36,49,83,.07);	
+
+  @media only screen and (max-width: $responsive-md) {
+		margin-bottom: 25px;
+	}	
+	
+  @media only screen and (max-width: $responsive-md) {
+		img {
+			display: block;
+			margin-bottom: $bottom-margin;
+		}	
+	}
+	
+	.content {
+		padding: 30px;
+	}
+}
+
+
+

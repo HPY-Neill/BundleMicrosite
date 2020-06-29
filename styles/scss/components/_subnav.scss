@@ -1,0 +1,31 @@
+// SUBNAV 
+
+.hpy_modular .sub-nav {
+	padding: 75px 0 30px;
+
+	  @media only screen and (max-width: $responsive-md) {
+			text-align: center;
+			padding: 45px 0 0;
+		}
+	
+	ul {
+		@include list-style(inline);
+		padding: 0 !important;
+	}
+	
+	li {
+		border-right: 2px solid $primary-2;
+		padding: 0 18px 0 12px;
+		
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			border-right: none;
+		}
+		
+		a {
+			font-size: 18px;
+		}
+	}
+}

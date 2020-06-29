@@ -1,0 +1,232 @@
+// ANIMATIONS
+ 
+ 
+ 
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+
+// hiding things before they animate. killing that crappy flashing
+[data-animation="fadeInUp"],
+[data-animation="fadeInDown"],
+[data-animation="fadeInLeft"],
+[data-animation="fadeInRightSmall"],
+[data-animation="fadeInRight"] {
+	opacity: 0;
+}
+ 
+ 
+// mega menu navigation
+@keyframes megaMenu {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+ 
+ 
+ 
+// Modals
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmscaleIn {
+  from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@media only screen and (max-width: $responsive-sm) {
+	// Reveal on scroll
+	.revealOnScroll { 
+		opacity: 1; 
+	}
+}
+
+
+
+
+
+
+/* GENERAL ANIMAITONS TO USE ACROSS THE SITE ----------------------- */
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: perspective(1px) translateZ(0) scale(1.1);
+		filter: grayscale(0);
+		backface-visibility: hidden;
+		-webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  to {
+		opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pulse {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  animation-name: pulse;
+}
+
+
+
+// Fade In Right
+@keyframes fadeInRight {
+  from {
+    opacity: .7;
+    transform: translate3d(5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+
+
+// Fade In Right - SMALL
+@keyframes fadeInRightSmall {
+  from {
+    opacity: .8;
+    transform: translate3d(2%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRightSmall {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  animation-name: fadeInRightSmall;
+}
+
+
+// Fade In Left
+@keyframes fadeInLeft {
+  from {
+    opacity: .7;
+    transform: translate3d(-5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  animation-name: fadeInLeft;
+}
+
+
+// Fade Out
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  animation-name: fadeOut;
+}
+
+
+
+
+// Fade Up
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+
+// Fade Down
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+
+
+/* Keyframes for initial animation */
+@keyframes strikethrough {
+	from {
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	to {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+
+@keyframes strikethroughDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

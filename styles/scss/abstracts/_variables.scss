@@ -1,0 +1,82 @@
+// VARIABLES
+//
+// Table of Contents:
+//
+// 1. Fonts
+// 1A.  Font Sizes
+// 2. Colors
+// 3. Additional colors
+// 4. Window sizes
+// 5. Misc
+// 6. Grid
+
+
+// 1. Fonts
+$primary-font: 												'Arial', sans-serif;
+//$primary-font: 												"Helvetica Neue", Helvetica, 'Arial', sans-serif;
+
+
+// 1A. Font Sizes
+$font-size-default:										16px;
+
+
+// 2. Colors
+
+$primary-1:														#cf152d;	// heartland red
+$primary-2:														#0071CE;	// blue
+$primary-3:														#003B71;	// navy
+$primary-4:														#d8d8d8;	// grey
+$primary-5:														#383D42;  // dark grey
+$primary-6:														#9CD6D8;  // teal
+ 
+$secondary-1:													#FFBF3F;  // gold
+$secondary-2:													#509C9F;  // aqua
+$secondary-3: 												#7fa9ae;  // green
+$secondary-4: 												#563d82;  // purple
+$secondary-5: 												#ed7a23;  // orange
+
+$primary-text-color:									$primary-5;
+
+$white:																#fff;
+$black:																#000;	
+
+$color-grey:													$primary-4;  // grey
+$color-light-grey:										#F2F2F2;  // light grey
+
+
+
+// 3 Additional colors 
+$button-color:            	          $primary-2;
+$button-color-hover:      	          $black;
+$hero-bg-color:												#efefef;
+$form-color:													$primary-3;
+$fine-print-color:										#333;
+$footer-color:												#53565a;
+
+
+// 4. Window sizes
+$responsive-xs:   										500px;
+$responsive-sm:   										769px;
+$responsive-md:     									992px;
+$responsive-lg:     									1024px;
+$responsive-max:     									1220px;
+ 
+
+
+// 5. Misc 
+$border-radius:												5px;
+$bottom-margin: 											25px;
+
+
+
+// 6. Grid 
+$grid-width:         									100%;
+$grid-gutter:        									3%;  
+                          						
+                          						
+                          						
+
+
+
+
+

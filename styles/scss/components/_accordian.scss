@@ -1,0 +1,97 @@
+// ACCORDIAN
+
+
+.hpy_modular .accordian {
+
+	label {	
+		background: $white;
+		display: block;
+		padding: 40px 30px 30px;
+		margin-bottom: 55px;
+		border-radius: $border-radius;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid transparent;
+		transition: border 0.2s linear;	
+		
+		h3 {
+			margin-bottom: 5px;
+		}
+		
+		&::after,
+		&::before {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: $white;
+			border-width: 15px;
+			margin-left: -15px;
+			transition: border 0.2s linear;	
+		}
+		
+		&:hover {
+			border: 1px solid #ddd;
+		
+			&::before {
+				border-color: rgba(0, 0, 0, 0);
+				border-top-color: #ddd;
+				border-width: 16px;
+				margin-left: -16px;
+			}
+		}	
+		
+		&.acc-3 {			
+			cursor: default;
+			
+			&::before,
+			&::after {
+				display: none;
+			}
+			
+			&:hover {
+				border: 1px solid transparent;
+			}
+		}
+	}
+	
+	input {
+		display: none;
+	}
+	 
+	
+	aside {
+	  margin-top: -1px;
+	  overflow: hidden;
+	  height: 0;
+	  position: relative;
+	  z-index: 10;
+	  transition: height 0.3s linear;
+	}
+	
+	
+	input:checked ~ aside {
+    transition: height 0.5s linear;
+		height: 125px;
+		padding: 0 12%;
+
+	  @media only screen and (max-width: $responsive-md) {	
+			padding: 0;
+			height: 150px;
+		}
+	}
+	
+	
+	
+
+}
+
+
+
+
+

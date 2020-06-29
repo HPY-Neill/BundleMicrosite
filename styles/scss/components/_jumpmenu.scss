@@ -1,0 +1,19 @@
+// JUMP MENU 
+
+.hpy_modular .jump-menu {
+	padding: 75px 0;
+	
+	p img {
+		height: 40px;
+		width: auto;
+	}
+	
+	h3 {
+		margin-bottom: $bottom-margin !important;
+		font-size: 28px;
+	}
+
+  @media only screen and (max-width: $responsive-md) {
+		text-align: center;
+	}
+}

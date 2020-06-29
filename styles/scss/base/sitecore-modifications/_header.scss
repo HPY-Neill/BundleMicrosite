@@ -1,0 +1,97 @@
+// SITE CORE MODIFICATIONS --- HEADER
+
+// fing zindex issues
+header {
+	z-index: 999999;
+	
+	.callout {
+		display: none;
+	}
+
+	@media screen and (min-width: $responsive-sm) { // desktop
+		// COVID-19 updates only showing on desktop
+	  max-height: 130px;
+	  border-top: 40px solid $primary-2;
+	
+		.logo-column {
+			position: static !important;
+		}
+	
+		.callout {
+			position: absolute;
+	    top: -28px;
+	    /* border: 1px solid red; */
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    text-align: center;
+	    font-weight: bold;
+			display: block;
+  
+			@media only screen and (max-width: 1199px) {
+				top: -38px;
+			}
+		
+			a {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+	}
+	
+}
+
+// fixing some locations of items
+header .menu-column #main-menu {
+	margin-top: 0 !important;
+}
+
+header .menu-column #main-menu>li#hamburger-desktop {
+	vertical-align: -10%;
+}
+
+@media only screen and (min-width: 1224px) {
+	header .menu-column .desktop-search-container {
+		top: 0 !important;
+	}
+}
+
+
+
+/* killing the transition pause */
+header.container-fluid,
+header .menu-column #main-menu>li,
+header .logo-column>a .header-logo {
+	transition-delay: .001s !important;
+	transition: all .25s linear;
+}
+
+
+/* nav background hover fix */
+header .menu-column #main-menu>li .sub-menu-desktop>li ul li a:hover {
+	background: none !important;
+	outline: none !important;
+}
+
+header .menu-column #main-menu>li .sub-menu-desktop>li ul {
+	padding: 10px 0;
+	
+	li a {
+		padding: 5px 15px;
+	}
+}
+
+
+
+/* hamburger menu */
+header .menu-column #main-menu>li#hamburger-desktop #main-menu-desktop-hamburger .top .left .cta-container a {
+	margin-bottom: 5px;
+}
+
+header .menu-column #main-menu>li#hamburger-desktop #main-menu-desktop-hamburger .top .right #hamburger-menu-items>li {
+	padding: 3px 0;
+}
+
+.cta-container .btn-primary:hover {
+	transition: all .25s linear;
+}

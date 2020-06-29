@@ -1,0 +1,80 @@
+// CARD FLIP
+
+.card-flip {
+  position: relative;
+  width: 376px;
+  height: 270px;
+	margin: auto;
+  perspective: 500px;
+	
+  @media only screen and (max-width: $responsive-md) {
+		width: 75%;
+	}	
+	
+	@media only screen and (max-width: $responsive-sm) {
+		width: 90%;
+	}	
+
+	.card-content {
+	  position: absolute;
+		top: 0;
+	  width: 100%;
+	  height: 100%;
+	  transition: transform 1s;
+	  transform-style: preserve-3d;
+	}
+		
+	&:hover .card-content {
+	  transform: rotateY( 180deg ) ;
+	  transition: transform 0.5s;
+		
+		.link-arrow {
+			display: none;
+		}
+	}
+
+	.front,
+	.back {
+	  position: absolute;
+		padding: 55px 15px;
+	  height: 100%;
+	  width: 100%;
+	  text-align: center;
+	  backface-visibility: hidden;
+	}
+	
+	.front {
+		cursor: pointer;
+		
+		.link-arrow {
+			font-size: $font-size-default;
+		}
+	}
+
+	.back {
+	  background: $primary-2;
+	  color: $white;
+	  transform: rotateY( 180deg );
+		
+		p {
+			font-size: 16px !important;
+		
+			@media screen and (max-width: $responsive-sm) {
+				font-size: 14px !important;
+		  }
+		
+			a {
+				color: $white !important;
+				text-decoration: underline !important;
+			}
+		}
+		
+		.cls-1 {
+			fill: $white;
+			width: 55px;
+		}
+	}
+}
+
+
+

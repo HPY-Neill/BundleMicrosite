@@ -1,0 +1,35 @@
+// LOGIN
+
+.login {
+	background: $primary-5;
+	color: $white;
+	padding: 25px 0 5px;
+	
+	ul {
+		@include list-style(null);
+		display: flex;
+		align-items: center;
+		width: 100%;
+//		justify-content: flex-end;
+
+	  @media only screen and (max-width: $responsive-md) {
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}	
+		
+		li {
+			margin-right: 20px;
+			
+			&:first-child {
+				flex-grow: 3;
+			}
+		}
+	}
+	
+	.button {
+		font-size: 15px !important;
+	}
+}
+
+

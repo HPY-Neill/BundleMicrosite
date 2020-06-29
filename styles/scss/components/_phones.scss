@@ -1,0 +1,85 @@
+// PHONES
+
+.phone {
+	background: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/iphone-pfo.png?modified=20190509134500') no-repeat scroll top left;
+	background-size: contain;
+	width: 398px;
+	height: 798px;
+	position: relative;
+	z-index: 2;
+	padding: 24px 0 0 27px;
+
+  @media only screen and (max-width: 1024px) {
+		width: 100%;
+		min-width: 295px;
+		padding: 17px 0 0 20px;
+	}	
+
+  @media only screen and (max-width: $responsive-md) {
+		display: none;
+	}	
+	
+	// phone shadows. change class to get correct positioning
+	&.phone_shadow-left::after,
+	&.phone_shadow-right::after {
+		content: "";
+		position: absolute;
+		top: 31px;
+		left: 12px;
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/phone-shadow_left.png?modified=20190509134500') no-repeat scroll top left;
+		width: 507px;
+		height: 882px;
+		z-index: 1;
+
+	  @media only screen and (max-width: 1024px) {
+			display: none;
+		}	
+	}
+	
+	&.phone_shadow-right::after {
+		top: 31px;
+		left: auto;
+		right: 12px;
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/online-payments/phone-shadow_right.png?modified=20190509134500') no-repeat scroll top left;
+	}	
+	
+	span {
+		position: relative;
+		border-radius: 29px;
+		overflow: hidden;
+		width: 345px;
+		padding-top: 60px;
+		height: 752px;
+		z-index: 5;
+		background: #e7e5e7;
+		@include flex(row, center, center, center, wrap);
+		
+	  @media only screen and (max-width: 1024px) {
+			width: 255px;
+			height: auto;
+			
+			img {
+				max-width: 88%;
+			}
+		}	
+		
+		&::after {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: 0 0 0 -85px;
+			content: "";
+			width: 175px;
+			height: 27px;
+			background: $black;
+			border-radius: 3px 3px 20px 20px;
+			
+		  @media only screen and (max-width: 1024px) {
+				display: none;
+			}	
+		}
+	}
+	
+}
+

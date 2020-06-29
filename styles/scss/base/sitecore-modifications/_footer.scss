@@ -1,0 +1,45 @@
+// SITE CORE MODIFICATIONS --- FOOTER
+
+
+.footer {
+	background-color: #383D42 !important;
+}
+
+.footer .footer-inner-container .footer-content .logo-container a img {
+	max-width: none;
+	width: 180px;
+}
+
+.footer .footer-inner-container .footer-content .link-section h4 {
+	color: #fff !important;
+	font-size: 24px !important;
+	margin-bottom: 35px !important;
+  margin-top: 19px !important;
+}
+
+.footer .footer-inner-container .footer-content .link-section .footer-links li a {
+  line-height: 30px !important;
+	font-size: 16px !important;
+}
+
+
+.footer .footer-inner-container .footer-content .footer-column.logo-container,
+.footer .footer-inner-container .footer-content .link-section {
+	width: 25% !important;
+
+	@media only screen and (max-width: $responsive-md) {
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+.footer .footer-social-links {
+	margin-top: 30px !important;
+	
+	li {
+		margin-right: 6px !important;
+	}
+}

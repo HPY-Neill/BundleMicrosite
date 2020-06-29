@@ -1,0 +1,30 @@
+//POS PAGE
+ 
+
+.hpy_modular.page-pointofsale {
+	
+	.hero {		
+	  @media only screen and (min-width: $responsive-sm) {	
+			margin-bottom: 200px;
+	  }
+	
+		.hpy_grid {
+			align-items: stretch;
+		}
+	}
+	
+	
+	.hero .rounded {
+		padding: 30px;
+		margin-bottom: -400px;
+		
+	  @media only screen and (max-width: $responsive-sm) {		
+			margin-bottom: 50px;
+	  }
+	}
+	
+	
+	
+	
+	
+}

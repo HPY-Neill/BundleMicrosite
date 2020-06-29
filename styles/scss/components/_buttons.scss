@@ -1,0 +1,139 @@
+// BUTTONS
+ 
+.hpy_modular button.button,
+.hpy_modular input.button,
+.hpy_modular a.button {
+	display: inline-block;
+  padding: 7px 35px;
+  font-size: 19px;
+	font-weight: 500;
+  color: $white;
+  text-align: center;
+  background: $primary-2;
+	border: none !important;
+	height: auto;
+	border-radius: $border-radius;
+  cursor: pointer !important;
+	outline: none;
+	text-decoration: none !important;
+	transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, background 0.25s ease-in-out;
+	margin: 0;
+	width: auto;
+	line-height: 2;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+			
+	&:hover {
+		background: lighten($primary-2, 8%);
+	  color: $white;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	}
+	
+	&:active {
+    box-shadow: 0 7px 14px rgba(50,50,93,.21), 0 3px 6px rgba(0,0,0,.18);
+	}
+	
+	// red
+	&.button-red {
+		background: $primary-1;
+		color: $white;
+	}
+	
+	// lightblue
+	&.button-lightblue {
+		background: #cce3f5;
+		color: $primary-2;
+	}
+	
+	// white
+	&.button-white {
+		background: $white;
+		color: $primary-2;
+	}
+	
+	// orange
+	&.button-orange {
+		background: $secondary-5;
+		color: $white;
+	}	
+	&.button-orange-light {
+		background: #feebde;
+		color: $secondary-5;
+	}
+	
+	// yellow
+	&.button-yellow {
+		background: $secondary-1;
+		color: $white;
+	}
+	&.button-yellow-light {
+		background: #fff2d9;
+		color: $secondary-1;
+	}
+	
+	// purple
+	&.button-purple {
+		background: $secondary-4;
+		color: $white;
+	}
+	&.button-purple-light {
+		background: #ddd8e6;
+		color: $secondary-4;
+	}
+	
+	// green
+	&.button-green {
+		background: $secondary-3;
+		color: $white;
+	}
+	&.button-green-light {
+		background: #e5eeef;
+		color: $secondary-3;
+	}
+	
+	// outline
+	&.button-outline {
+		background: transparent;
+		color: $white;
+		border: 2px solid $white !important;
+		box-shadow: none;
+		
+		&:hover {
+			background: darken($primary-5, 10%);
+		}
+	}
+	
+	// with link
+	&.link-arrow {
+		padding-right: 41px;
+	}
+	
+	// full width of container
+	&.button-full {
+	  padding: 9px 25px;
+		width: 100%;
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+		
+	@media only screen and (max-width: $responsive-md) {
+		line-height: 1.4;
+  }
+	
+	&.font-large {
+		font-size: 24px !important;
+	}
+	
+}
+
+
+.hpy_modular .button-container .button {
+	margin-right: 15px;	
+	margin-bottom: 20px;
+
+		
+	@media only screen and (max-width: $responsive-sm) {
+		margin-right: 25px;
+		margin-left: 25px;
+  }
+}

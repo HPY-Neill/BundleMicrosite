@@ -1,0 +1,41 @@
+// REGISTER
+
+
+.hpy_modular.page-register20 {
+	
+
+	.hero.hero_register {
+		background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/register/register-hero-bg.jpg');	
+	
+		video {
+			@media screen and (min-width: $responsive-md) {
+				top: -95px;
+			}
+		}
+		
+	}
+
+	#shop {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/register/register-business-takes-you-background.jpg') no-repeat scroll center center;
+		background-size: cover;
+		color: $white;
+		margin: 0 0 50px 0;
+		padding: 100px 0 110px;
+	}
+
+	.support-security {
+		margin-bottom: 50px;
+	}
+
+	
+	#run-business {
+		padding-bottom: 0;
+	}
+	
+	#experiences .hpy_grid {
+		margin-bottom: 75px;
+	}
+
+
+
+}

@@ -1,0 +1,101 @@
+// STRIKETHRU 
+
+.hpy_modular h1.js-strike {
+	font-size: 55px;
+	
+	.strike-through {	
+	  padding: 0 !important;
+	  position: relative;
+	  text-decoration: none !important;
+		
+		&::after {
+			display: none;
+		}
+	}
+		
+	.word-group {
+    white-space: pre !important;
+	}
+
+	.line-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .8em;
+		width: 100%;
+	}
+
+	.redline {
+    border-bottom: solid .3em rgba(250,52,52, 0.7);
+	}
+}
+
+
+
+
+.hpy_modular .strikethrough {
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+	text-decoration: line-through;
+	text-decoration-color: $primary-1;
+	padding: 0 10px;
+
+	@media screen and (min-width: $responsive-md) {
+		padding: 0;
+		text-decoration: none;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: calc(100% + 20px);
+			height: 17px;
+			margin-top: -40px;
+			margin-left: -10px;
+			opacity: 1;
+			background: rgba(250,52,52,.7);
+			transform-origin: center left;
+			animation: strikethrough 1s 1.7s cubic-bezier(.55, 0, .1, 1) 1;
+			transition: transform .75s cubic-bezier(.55, 0, .1, 1);
+			animation-fill-mode: both;
+		}
+
+		&.hesitate1:after {
+			animation-delay: 2.4s;
+		}
+
+		&.hesitate2:after {
+			animation-delay: 3s;
+		}	
+  }
+	
+	
+	
+}
+
+
+
+
+.st-line {
+	display: block;
+	animation: strikethroughDown .3s linear;
+	animation-fill-mode: both;
+	
+	&.line-1 {
+		animation-delay: .1s;
+	}
+
+	&.line-2 {
+		animation-delay: .8s;
+	}
+
+	&.line-3 {
+		animation-delay: 1.3s;
+	}
+
+	&.line-4 {
+		animation-delay: 1.7s;
+	}
+
+}

@@ -1,0 +1,70 @@
+// PRODUCT FAMILY
+
+.hpy_modular .product-family {
+	padding: 25px 0 75px;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 5;
+
+  @media only screen and (max-width: $responsive-sm) {
+		display: none;
+	}	
+	
+	&::after {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/payment-processing/product-fam-bg-combined.png') no-repeat scroll bottom center;
+		width: 100%;
+		height: 306px;
+		content: "";
+		position: absolute;
+		bottom: -115px;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	
+	
+	.iphone,
+	.mobile,
+	.cube,
+	.terminal {
+		position: absolute;
+		display: inline-block;		
+		opacity: 0;
+	}
+	
+	.iphone {
+		bottom: 0;
+		margin-left: -327px;
+		animation-duration: 0.5s;
+		animation-delay: 1.05s;
+	}
+	
+	.mobile {
+		margin-left: -285px;
+		bottom: -15px;
+		animation-duration: 0.45s;
+		animation-delay: .8s;
+	}
+	
+	.register {
+		opacity: 0;
+		animation-duration: 0.45s;
+		animation-delay: .05s;
+	}
+	
+	.cube {
+		bottom: -10px;
+		margin-left: 133px;
+		animation-duration: 0.75s;
+		animation-delay: .44s;
+	}
+	
+	.terminal {
+		bottom: -15px;
+		margin-left: 220px;
+		animation-duration: 0.5s;
+		animation-delay: .65s;
+	}
+	
+}
+

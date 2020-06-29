@@ -1,0 +1,200 @@
+// MODALS
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	z-index: 9999998;
+	overflow: hidden;
+}
+
+.hpy_modal {
+  display: none;
+  visibility: hidden;
+  z-index: 9999999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	outline: none !important;
+	border: none !important;
+	border-shadow: none !important;
+  background: rgba(0,0,0,0.85);
+  animation: mmfadeIn .3s linear;
+  will-change: transform;
+
+	  @media only screen and (max-width: $responsive-md) {
+			top: 25px;
+		}	
+
+	&.active {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: fixed;
+	  visibility: visible;
+	  -webkit-overflow-scrolling: touch;
+	}
+	
+	.modal-content {
+	  background-color: $black;
+	  padding: 0;
+		max-width: 1380px;
+		width: 90%;
+		height: 76%;
+		max-height: 776px;
+		border-radius: 0;
+		position: relative;
+		box-sizing: border-box;
+	  animation: mmscaleIn .3s linear;
+	  will-change: transform;
+		box-shadow: 0 5px 15px rgba(0,0,0,.2); 
+
+	  @media only screen and (max-width: $responsive-md) {
+			width: 85%;
+		}	
+		
+		&.overflow-scroll {
+			overflow: auto;
+		}
+		
+		iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+			right: 0;
+			bottom: 0;
+	    width: 100%;
+	    height: 100%;
+	    border: 0;
+		}
+	}
+
+	.close {
+	  background: transparent;
+	  border: 0;
+		cursor: pointer;
+		font-size: 25px;
+		position: absolute;
+		top: -30px;
+		right: -30px;
+		outline: none;
+	  color: $white;
+	  text-shadow: none;
+	  opacity: 1;
+		transition: all 0.2s linear;
+
+	  @media only screen and (max-width: $responsive-md) {
+			top: -20px;
+			right: -20px;
+		}	
+		
+		&.close-inside {
+			top: 15px;
+			right: 15px;
+		}
+			
+		&.close-dark {
+			color: $primary-text-color;
+		}
+	
+		&::before { content: "\2715"; }
+		&:hover {
+			color: $white;
+			opacity: .7;
+		}
+	}
+	
+	.contents {
+		padding: 3% 0;
+	}
+}
+
+
+
+
+// Blue Background modal
+.modal_blue {
+  background: rgba(255,255,255,0.85);
+	
+	.modal-content {
+
+	  @media only screen and (min-width: $responsive-md) {
+			max-width: 880px;
+			height: auto;
+			max-height: auto;
+		}
+		background: $primary-3;
+		color: $white;
+		padding: 50px;
+
+	  @media only screen and (max-width: $responsive-md) {
+			padding: 20px;
+			overflow: auto;
+		}	
+		
+		
+		p {
+			font-size: 18px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+		
+		li {
+			font-size: 18px !important;
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+		
+		.cls-1 {
+			fill: $white;
+		}
+		
+		.icon {
+			display: inline-block;
+			opacity: .7;
+			margin: 0 25px 25px 0;
+		}
+		
+		h3 {
+			display: inline-block;
+			opacity: .7;
+			font-size: 24px;
+		}
+		
+		h4 {
+			color: $white;
+			font-size: 32px;
+			margin-bottom: $bottom-margin !important;
+		}
+
+	  @media only screen and (min-width: $responsive-md) { // only show on larger than tablet
+			.hpy_grid .col-6:first-child {
+		    border-right: 1px solid white;
+		    padding-right: 40px;
+			}
+		}
+	}
+	
+	.close {
+		top: 40px; 
+		right: 40px;
+		font-size: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

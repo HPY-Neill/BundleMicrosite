@@ -1,0 +1,177 @@
+// DECISION MATRIX
+
+
+
+.hpy_modular .decision-matrix {
+	position: relative;
+	height: 375px !important;
+	transition: height 0.1s linear;
+	
+	&.step-4 {
+		height: 750px !important;
+		transition: height 0.01s linear;
+	}
+	
+	.fadeInRightSmall {
+		animation-duration: .2s;
+	}
+	
+	.matrix {
+		@include list-style(null);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	
+	// plain titles
+	h3 {
+		font-size: 22px;
+		color: #777f84;
+		font-weight: normal;
+		min-height: 55px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	
+	ul {
+		padding-left: 10px;
+		padding-right: 10px;
+		max-width: 500px;
+		margin: auto !important;
+		
+		li {
+			margin-bottom: 0 !important;
+			
+			span {
+				color: $primary-2;
+				border-bottom: 1px solid #efefef;
+				padding: 20px;
+				cursor: pointer;
+				display: block;
+				transition: background-color 0.1s linear;
+				
+				&::after {
+					right: 10px;
+				}
+				
+				&:hover {
+					background-color: #f5f6f8;
+				}
+			}
+		}
+	}
+	
+	
+	// hiding subs for initial
+	.menu-selection_beta,
+	.menu-selection_gamma,
+	.menu-selection_delta {
+		display: none;
+		
+		&.open {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 555;
+			padding-left: 10px;
+			padding-right: 10px;
+			background: #fff;
+			height: 100%;
+			visibility: visible !important;
+			
+			h3 {
+				min-height: 53px;
+			}
+		}
+	}
+	
+	
+	.matrix.fully,
+	.menu-selection_alpha.open.hide-me,
+	.menu-selection_beta.open.hide-me,
+	.menu-selection_gamma.open.hide-me,
+	.menu-selection_delta.open {
+		max-width: 1220px !important;
+		width: 100%;
+		padding: 0 !important;
+		background: $white;
+	}
+	
+	.matrix.fully span {
+		color: $white !important;
+	}
+	
+	
+	// hiding previous card
+	.hide-me {
+		visibility: hidden;
+	}
+	
+	
+	.card {
+		display: none;
+		border: 2px solid #efefef;
+		padding: 35px 30px;
+		box-sizing: border-box;
+		
+		h3 {
+			color: $black;
+			//margin-bottom: 10px;
+		}
+		
+		img {
+			margin: 0 auto;
+		}
+	}
+	
+	
+	// last selection grid
+	.matrix-selections .hpy_grid {
+		justify-content: space-evenly;
+		align-items: stretch;
+	}
+	
+	
+	// show specific cards
+	.show-m5000 .card-m5000 {display: block;}
+	.show-d3500 .card-d3500 {display: block;}
+	.show-restaurant .card-restaurant {display: block;}
+	.show-register .card-register {display: block;}
+	.show-mobilepay .card-mobilepay {display: block;}
+	.show-retail .card-retail {display: block;}
+	.show-terminal .card-terminal {display: block;}
+	//.show-a920 .card-a920 {display: block;}
+	.show-hfsp .card-hfsp {display: block;}
+	
+	
+}
+
+
+// start over
+.hpy_modular .start-over {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	
+	span {
+		cursor: pointer;
+		color: #777f84 !important;
+		visibility: hidden;
+	
+		&.show-me {
+			visibility: visible;
+			display: block;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,100 @@
+// CAPTAIL and CAPITAL CARES
+ 
+
+.hpy_modular.page-capital {
+
+	.hero h1 {
+		position: relative;
+		display: table-cell;
+		
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 31px;
+			right: -210px;
+			background: url('https://prod-heartland.azureedge.net/-/media/heartland/capital/powered-by-Lenio.png') no-repeat scroll top left;
+			width: 198px;
+			height: 31px;			
+	
+		  @media only screen and (max-width: $responsive-md) {	
+				position: static;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	
+	.circle-check {
+		float: left;
+    margin-right: 15px;
+    margin-top: 4px;
+		
+		+ div {
+			padding-left: 55px;
+			
+			h3 {
+				margin-bottom: 9px;
+			}
+		}
+	}	
+	
+	
+	.accordian h3 {
+		position: relative;
+		
+		&::before {
+			position: absolute;
+			border: 2px solid #b2d4f0;
+			height: 46px;
+			width: 46px;
+			padding-top: 8px;
+			display: block;
+			content: "1";
+			color: $primary-2;
+			font-size: 26px;
+			font-weight: bold;
+			background: $white;
+			border-radius: 50%;
+			top: -65px;
+			left: 50%;
+			margin-left: -23px;
+			z-index: 500;
+		}
+	}
+	
+	.accordian .acc-2 h3::before {
+		content: "2";
+	}
+	.accordian .acc-3 h3::before {
+		content: "3";
+	}
+	
+	
+	#how-it-works .bg-lightgrey {
+		border-radius: $border-radius;
+		box-sizing: border-box;
+		padding: 60px 90px 50px;
+		margin-bottom: 50px;		
+	
+	  @media only screen and (max-width: $responsive-md) {	
+			padding: 40px;
+		}
+	}
+	
+	
+	.hpy_modal .modal-content {
+		max-width: 650px;
+		height: auto;
+	}
+	
+	
+	
+	&.page-capital_cares {
+		
+		.hero h1::after {
+			display: none;
+		}
+	}
+	
+}

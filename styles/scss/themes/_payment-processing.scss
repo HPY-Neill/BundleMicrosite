@@ -1,0 +1,55 @@
+// PAYMENTS PAGE
+ 
+
+.hpy_modular.page-payment-processing {
+	
+	h2 {
+		margin-bottom: 25px;
+	}
+	
+	
+	
+	.circle-check {
+		float: left;
+    margin-right: 15px;
+    margin-top: -4px;
+		margin-bottom: 25px;
+	}	
+	
+	.support-security {
+	  @media only screen and (max-width: $responsive-md) {
+			height: 1080px;
+		}	
+	}
+	
+
+	.rounded img {
+		display: block;
+		margin-bottom: $bottom-margin;
+	}	
+	
+	.card-flip {
+	  width: 100%;
+
+		.front,
+		.back {
+			padding: 55px 0;
+			
+			p {
+				padding: 0 10px;
+			}
+		}
+	}
+	
+	
+	section#securely .contents {
+		background: url('https://prod-heartland.azureedge.net/-/media/heartland/payment-processing/securely-accept-bg.jpg') no-repeat scroll top center;
+		padding-top: 100px;
+		margin-bottom: 200px;
+		
+		.bg-white {
+			padding: 50px;
+			box-sizing: border-box;
+		}
+	}
+}

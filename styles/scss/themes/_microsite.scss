@@ -1,11 +1,59 @@
 // MAIN MICROSITE PAGE
  
+header img {
+	height: initial !important;
+}
+
+.hpy_modular {
+	padding-top: 20px !important;
+}
+
+.hand {
+	font-family: 'Patrick Hand', cursive !important;
+}
+
+.hand-dark {
+	color: $hand-dark-color !important;
+}
+
+.transformation-text {
+	position: relative !important;
+	top: -30px !important;
+	left: -50px !important;
+}
+
+@media only screen and (max-width: $responsive-sm) {
+	.transformation-text {
+		left: 0 !important;
+	}
+}
+
 .testimonial-img {
 	box-shadow: none;
 }
 
 .lg-p {
 	font-size: 20px !important;
+}
+
+@media only screen and (max-width: $responsive-sm) {
+	.sm-flip-1 {
+		position: relative;
+		top: 200px;
+	}
+	.sm-flip-2 {
+		position: relative;
+		top: -250px;
+	}
+	.test-p {
+		font-size: 16px !important;
+	}
+}
+
+@media only screen and (max-width: $responsive-xs) {
+	.sm-flip-2 {
+		top: -300px;
+	}
 }
 
 .hpy_modular.page-micro-main {

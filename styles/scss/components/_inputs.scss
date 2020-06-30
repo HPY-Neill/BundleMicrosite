@@ -11,39 +11,43 @@
 
 // bulldog design forms
 .hpy_modular .form-pardot {	
-	margin: 30px 0 0;
-	padding-bottom: 20px;
+	margin: 0 auto;
+	padding: 20px 35px;
+	max-width: 420px;
+	box-shadow: 0 0 15px 3px rgba(0,0,0,0.25);
+	border-radius: $border-radius;
 	font-size: $font-size-default;
+	background-color: $hero-bg-color;
+	color: $form-color;
 	
 	h2 {
 		margin-bottom: 15px !important;
 	}
 	
 	p {
-		margin-bottom: 40px !important;
+		margin-bottom: 20px !important;
+		color: $fine-print-color !important;
 	}
 			
 	label {
-		font-size: 18px !important;
+		font-size: 16px !important;
+		font-weight: 900 !important;
 		display: block;
 		margin-bottom: 10px;
 	}		
 		
 	input[type="text"],
-	input[type="number"],
 	input[type="email"],
-	input[type="tel"],
-	textarea {
-		font-size: 18px;
+	input[type="tel"] {
+		font-size: 16px;
 		height: auto;
-		width: 100%;
-		max-width: 100%;
+		max-width: 80%;
 		padding: 13px 13px;
-		margin-bottom: 35px;
-		border: 1px solid transparent;
+		margin-bottom: 15px;
+		border: 1px solid $white;
 		outline: none !important;
 		border-radius: $border-radius;
-	  color: #555;
+		color: #555;
 		
 		&:focus,
 		&:active {
@@ -55,13 +59,10 @@
 		}
 	}
 
-	textarea {
-		min-height: 100px;
-		width: 100%;
-	}
 	
 	.button {
-		margin-bottom: 40px !important;
+		margin-bottom: 20px !important;
+		font-family: "Arial", sans-serif !important;
 	}
 	
 	a {
@@ -104,8 +105,6 @@
 		}
 	}
 }
-
-
 
 
 /* Styling Checkbox Starts */
@@ -224,16 +223,16 @@
 }
 
 
-
 // old form design. will be removed once we have converted to new designs above
 .hpy_modular #developer-signup .form-pardot {
 	background: #fefefe;
-	padding: 30px !important;
-	//box-shadow: -50px 32px 71px 14px rgba(0,0,0,0.05);
+	padding: 30px;
+	// box-shadow: -50px 32px 71px 14px rgba(0,0,0,0.05);
 	max-width: 550px;
 	margin: auto auto 30px;
 		
 	h3 {
+		font-weight: 100 !important;
 		font-size: 28px;
 	}
 	
@@ -250,6 +249,5 @@
 		margin-bottom: 20px;
 		border: 1px solid #ccc;
 		outline: none !important;
-	  color: #555;
 	}
 }

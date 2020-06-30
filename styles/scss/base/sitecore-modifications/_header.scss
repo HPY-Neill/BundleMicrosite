@@ -10,8 +10,7 @@ header {
 
 	@media screen and (min-width: $responsive-sm) { // desktop
 		// COVID-19 updates only showing on desktop
-	  max-height: 130px;
-	  border-top: 40px solid $primary-2;
+	  max-height: 60px;
 	
 		.logo-column {
 			position: static !important;

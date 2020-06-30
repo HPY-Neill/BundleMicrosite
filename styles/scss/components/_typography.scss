@@ -172,7 +172,7 @@
 	
 	  @media only screen and (max-width: $responsive-md) {		
 	    .text-center-md {
-				text-align: center;
+				text-align: center !important;
 	    }
 	  }
 

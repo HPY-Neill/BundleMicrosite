@@ -1,3 +1,24 @@
+footer {
+	background-image: none !important;
+	background-color: $footer-color !important;
+	color: $white !important;
+	padding: 50px 0;
+
+	ul {
+		padding: 0 !important;
+		li {
+			padding: 0 2px;
+			display: inline-block;
+		}
+	} 
+
+	.contents {
+		p {
+			font-size: 13px;
+		}
+	}
+}
+
 // FOOTER
 
 
@@ -54,7 +75,6 @@ footer#footer-modular {
 		li a {
 			min-width: auto;
 			padding: 0;
-			font-size: 35px;
 			letter-spacing: 0;
 			color: #ccc;
 			overflow: hidden;
@@ -64,6 +84,20 @@ footer#footer-modular {
 			
 			&:hover {
 				color: $white;
+			}
+
+			.hover-image {
+				display: none;
+			}
+		}
+
+		li a:hover {
+			.hover-image {
+				display: initial;
+			}
+
+			.normal-image {
+				display: none;
 			}
 		}
 	}
@@ -108,6 +142,7 @@ footer#footer-modular {
 		.copyright p {
 			margin-top: 0;
 		}
+
 	}
 	
 

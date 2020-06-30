@@ -1085,7 +1085,7 @@ body {
   background-image: url("../../assets/images/hero-bg.jpg"); }
 
 .hpy_modular.page-micro-main .hero.hero-2 {
-  background-image: url("../../../assets/images/mid-bg.jpg"); }
+  background-image: url("../../assets/images/mid-bg.jpg"); }
 
 .hpy_modular.page-restaurant .hero {
   background-image: url("https://prod-heartland.azureedge.net/-/media/heartland/restaurant/rest-hero-q2.jpg"); }
@@ -1208,7 +1208,7 @@ body {
 
 .hpy_modular .form-pardot {
   margin: 0 auto;
-  padding: 20px 35px;
+  padding: 35px;
   max-width: 420px;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -1778,18 +1778,16 @@ body {
     list-style: none;
     display: inline-block;
     vertical-align: top; }
-  .rslides_tabs li {
-    margin: 0 5px; }
-    .rslides_tabs li a {
-      display: block;
-      text-indent: -9999px;
-      width: 12px;
-      height: 12px;
-      background: #fff;
-      border-radius: 50%;
-      border: 2px solid #383D42; }
-    .rslides_tabs li.rslides_here a {
-      background: #383D42; }
+  .rslides_tabs li a {
+    display: block;
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #383D42; }
+  .rslides_tabs li.rslides_here a {
+    background: #383D42; }
 
 .hpy_modular.page-micro-main .slider-nav {
   z-index: 1;
@@ -1822,44 +1820,39 @@ body {
       list-style: none;
       display: inline-block;
       vertical-align: top; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li {
-      margin: 0 31px; }
-      @media screen and (max-width: 1120px) {
-        .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li {
-          margin: 0 5px; } }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
-        display: block;
-        text-indent: 0 !important;
-        width: auto !important;
-        height: auto !important;
-        background: transparent;
-        border-radius: 0;
-        border: none;
-        font-size: 16px;
-        color: #565a5e;
-        font-weight: bold;
-        padding: 20px 50px 25px;
-        border-top: 6px solid transparent; }
-        @media only screen and (max-width: 992px) {
-          .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
-            padding: 20px 15px 25px; } }
-        .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a::after {
-          margin-top: -7px !important; }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s1 a {
-        border-color: #0071CE;
-        color: #0071CE; }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s2 a {
-        border-color: #7fa9ae;
-        color: #7fa9ae; }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s3 a {
-        border-color: #563d82;
-        color: #563d82; }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s4 a {
-        border-color: #FFBF3F;
-        color: #FFBF3F; }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s5 a {
-        border-color: #ed7a23;
-        color: #ed7a23; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
+      display: block;
+      text-indent: 0 !important;
+      width: auto !important;
+      height: auto !important;
+      background: transparent;
+      border-radius: 0;
+      border: none;
+      font-size: 16px;
+      color: #565a5e;
+      font-weight: bold;
+      padding: 20px 50px 25px;
+      border-top: 6px solid transparent; }
+      @media only screen and (max-width: 992px) {
+        .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
+          padding: 20px 15px 25px; } }
+      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a::after {
+        margin-top: -7px !important; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s1 a {
+      border-color: #0071CE;
+      color: #0071CE; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s2 a {
+      border-color: #7fa9ae;
+      color: #7fa9ae; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s3 a {
+      border-color: #563d82;
+      color: #563d82; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s4 a {
+      border-color: #FFBF3F;
+      color: #FFBF3F; }
+    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s5 a {
+      border-color: #ed7a23;
+      color: #ed7a23; }
 
 .slide-left,
 .slide-right {
@@ -1996,7 +1989,7 @@ body {
   margin-bottom: 15px !important; }
 
 .hpy_modular .lg-bot-margin {
-  margin-bottom: 50px !important; }
+  margin-bottom: 30px !important; }
 
 .hpy_modular .xl-bot-margin {
   margin-bottom: 80px !important; }
@@ -2204,6 +2197,10 @@ body {
 .hpy_modular .icon-circle-close {
   background: url("https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-close_grey.svg") center center no-repeat; }
 
+@media only screen and (max-width: 769px) {
+  .hide-break {
+    display: none; } }
+
 footer {
   background-image: none !important;
   background-color: #53565a !important;
@@ -2215,6 +2212,7 @@ footer {
       padding: 0 2px;
       display: inline-block; }
   footer .contents p {
+    margin-top: 30px;
     font-size: 13px; }
 
 footer#footer-modular {
@@ -2310,9 +2308,20 @@ header img {
   top: -30px !important;
   left: -50px !important; }
 
+.stretch {
+  align-items: stretch !important; }
+
+#resources .card {
+  box-shadow: 0 1px 5px rgba(36, 49, 83, 0.15); }
+
+#resources .mid-top-card {
+  margin-bottom: 20px !important; }
+
 @media only screen and (max-width: 769px) {
   .transformation-text {
-    left: 0 !important; } }
+    left: 0 !important; }
+  .col-sm-12 {
+    margin-bottom: 0 !important; } }
 
 .testimonial-img {
   box-shadow: none; }
@@ -2338,7 +2347,7 @@ header img {
   padding-bottom: 0; }
 
 .hpy_modular.page-micro-main .hero_slideshow {
-  padding: 30px 0;
+  padding: 60px 0 80px;
   display: block;
   position: relative; }
   .hpy_modular.page-micro-main .hero_slideshow #slider {

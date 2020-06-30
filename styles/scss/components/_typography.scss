@@ -87,7 +87,7 @@
 }
 
 .hpy_modular .lg-bot-margin {
-	margin-bottom: 50px !important;
+	margin-bottom: 30px !important;
 }
 
 .hpy_modular .xl-bot-margin {
@@ -398,3 +398,10 @@
 	}
 }
 
+// breaks
+
+@media only screen and (max-width: $responsive-sm) {
+	.hide-break {
+		display: none;
+	}
+}

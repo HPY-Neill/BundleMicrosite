@@ -45,7 +45,6 @@
 	z-index: 1000;
 	
 	li {
-		margin: 0 5px;
 			
 		a {
 			display: block;
@@ -99,11 +98,6 @@
 		background: $white;
 	
 		li {
-			margin: 0 31px;
-	
-			@media screen and (max-width: 1120px) {
-				margin: 0 5px;
-		  }
 	
 			> a {
 				display: block;

@@ -22,9 +22,27 @@ header img {
 	left: -50px !important;
 }
 
+.stretch {
+	align-items: stretch !important;
+}
+
+#resources {
+	.card {
+		box-shadow: 0 1px 5px rgba(36,49,83,.15);	
+	}
+	.mid-top-card {
+		margin-bottom: 20px !important;
+	}
+}
+
 @media only screen and (max-width: $responsive-sm) {
+	
 	.transformation-text {
 		left: 0 !important;
+	}
+
+	.col-sm-12 {
+		margin-bottom: 0 !important;
 	}
 }
 
@@ -64,7 +82,7 @@ header img {
 	
 	// slider hero	 
 	.hero_slideshow {
-		padding: 30px 0;
+		padding: 60px 0 80px;
 		display: block;
 		position: relative;
 		

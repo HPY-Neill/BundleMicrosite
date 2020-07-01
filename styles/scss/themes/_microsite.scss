@@ -22,23 +22,43 @@ header img {
 	color: $hand-dark-color !important;
 }
 
-.transformation-text {
-	position: relative !important;
-	top: -30px !important;
-	left: -50px !important;
-}
-
 .stretch {
 	align-items: stretch !important;
 }
 
 #resources {
+
 	.card {
 		box-shadow: 0 1px 5px rgba(36,49,83,.15);	
 	}
+
 	.mid-top-card {
 		margin-bottom: 20px !important;
 	}
+}
+
+.page-micro-main {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -30px !important;
+		left: -50px !important;
+	}
+
+
+}
+
+.page-micro-retail {
+
+	#resources {
+		padding-bottom: 60px;
+	}
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -25px !important;
+	}
+
 }
 
 @media only screen and (max-width: $responsive-sm) {
@@ -49,6 +69,10 @@ header img {
 
 	.col-sm-12 {
 		margin-bottom: 0 !important;
+	}
+
+	.card {
+		margin-bottom: 25px !important;
 	}
 }
 
@@ -80,7 +104,7 @@ header img {
 	}
 }
 
-.hpy_modular.page-micro-main {
+.hpy_modular.page-micro {
 	
 	#topper {
 		padding-bottom: 0;

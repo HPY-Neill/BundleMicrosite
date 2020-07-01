@@ -1087,6 +1087,9 @@ body {
 .hpy_modular.page-micro-main .hero.hero-2 {
   background-image: url("../../assets/images/mid-bg.jpg"); }
 
+.hpy_modular.page-micro-retail .hero {
+  background-image: url("../../assets/images/retail-hero.jpg"); }
+
 .hpy_modular.page-restaurant .hero {
   background-image: url("https://prod-heartland.azureedge.net/-/media/heartland/restaurant/rest-hero-q2.jpg"); }
 
@@ -1789,7 +1792,7 @@ body {
   .rslides_tabs li.rslides_here a {
     background: #383D42; }
 
-.hpy_modular.page-micro-main .slider-nav {
+.hpy_modular.page-micro .slider-nav {
   z-index: 1;
   width: 100%;
   text-align: center;
@@ -1800,12 +1803,12 @@ body {
   overflow: hidden;
   box-sizing: border-box; }
   @media screen and (max-width: 930px) {
-    .hpy_modular.page-micro-main .slider-nav {
+    .hpy_modular.page-micro .slider-nav {
       width: 100% !important; } }
   @media screen and (max-width: 740px) {
-    .hpy_modular.page-micro-main .slider-nav {
+    .hpy_modular.page-micro .slider-nav {
       min-height: 140px; } }
-  .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs {
+  .hpy_modular.page-micro .slider-nav ul.rslides_tabs {
     list-style: none;
     margin: 0;
     padding: 0 !important;
@@ -1816,11 +1819,11 @@ body {
     position: relative !important;
     border-bottom: 1px solid #efefef;
     background: #fff; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li {
       list-style: none;
       display: inline-block;
       vertical-align: top; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li > a {
       display: block;
       text-indent: 0 !important;
       width: auto !important;
@@ -1834,23 +1837,23 @@ body {
       padding: 20px 50px 25px;
       border-top: 6px solid transparent; }
       @media only screen and (max-width: 992px) {
-        .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a {
+        .hpy_modular.page-micro .slider-nav ul.rslides_tabs li > a {
           padding: 20px 15px 25px; } }
-      .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li > a::after {
+      .hpy_modular.page-micro .slider-nav ul.rslides_tabs li > a::after {
         margin-top: -7px !important; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s1 a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s1 a {
       border-color: #0071CE;
       color: #0071CE; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s2 a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s2 a {
       border-color: #7fa9ae;
       color: #7fa9ae; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s3 a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s3 a {
       border-color: #563d82;
       color: #563d82; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s4 a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s4 a {
       border-color: #FFBF3F;
       color: #FFBF3F; }
-    .hpy_modular.page-micro-main .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s5 a {
+    .hpy_modular.page-micro .slider-nav ul.rslides_tabs li.rslides_here.rslides2_s5 a {
       border-color: #ed7a23;
       color: #ed7a23; }
 
@@ -1985,6 +1988,12 @@ body {
     .hpy_modular h4 {
       font-size: 20px; } }
 
+.hpy_modular .no-bot-margin {
+  margin-bottom: 0 !important; }
+
+.hpy_modular .xs-bot-margin {
+  margin-bottom: 5px !important; }
+
 .hpy_modular .sm-bot-margin {
   margin-bottom: 15px !important; }
 
@@ -2041,7 +2050,9 @@ body {
 
 @media only screen and (max-width: 769px) {
   .hpy_modular .text-center-sm {
-    text-align: center; } }
+    text-align: center; }
+  .hpy_modular .text-left-sm {
+    text-align: left; } }
 
 @media only screen and (max-width: 992px) {
   .hpy_modular .text-center-md {
@@ -2306,11 +2317,6 @@ header img {
 .hand-dark {
   color: #9fa6ab !important; }
 
-.transformation-text {
-  position: relative !important;
-  top: -30px !important;
-  left: -50px !important; }
-
 .stretch {
   align-items: stretch !important; }
 
@@ -2320,11 +2326,25 @@ header img {
 #resources .mid-top-card {
   margin-bottom: 20px !important; }
 
+.page-micro-main .hero-hand-text {
+  position: relative !important;
+  top: -30px !important;
+  left: -50px !important; }
+
+.page-micro-retail #resources {
+  padding-bottom: 60px; }
+
+.page-micro-retail .hero-hand-text {
+  position: relative !important;
+  top: -25px !important; }
+
 @media only screen and (max-width: 769px) {
   .transformation-text {
     left: 0 !important; }
   .col-sm-12 {
-    margin-bottom: 0 !important; } }
+    margin-bottom: 0 !important; }
+  .card {
+    margin-bottom: 25px !important; } }
 
 .testimonial-img {
   box-shadow: none; }
@@ -2346,16 +2366,16 @@ header img {
   .sm-flip-2 {
     top: -300px; } }
 
-.hpy_modular.page-micro-main #topper {
+.hpy_modular.page-micro #topper {
   padding-bottom: 0; }
 
-.hpy_modular.page-micro-main .hero_slideshow {
+.hpy_modular.page-micro .hero_slideshow {
   padding: 60px 0 80px;
   display: block;
   position: relative; }
-  .hpy_modular.page-micro-main .hero_slideshow #slider {
+  .hpy_modular.page-micro .hero_slideshow #slider {
     margin: 0 !important; }
-  .hpy_modular.page-micro-main .hero_slideshow div.contents {
+  .hpy_modular.page-micro .hero_slideshow div.contents {
     margin: 0;
     z-index: 100;
     max-width: 1120px;
@@ -2365,69 +2385,69 @@ header img {
     transform: translate(-50%, 0);
     box-sizing: border-box; }
     @media screen and (max-width: 930px) {
-      .hpy_modular.page-micro-main .hero_slideshow div.contents {
+      .hpy_modular.page-micro .hero_slideshow div.contents {
         width: 100% !important; } }
-  .hpy_modular.page-micro-main .hero_slideshow .button-container {
+  .hpy_modular.page-micro .hero_slideshow .button-container {
     margin-bottom: 25px; }
-  .hpy_modular.page-micro-main .hero_slideshow section {
+  .hpy_modular.page-micro .hero_slideshow section {
     padding-top: 80px;
     border-radius: 5px; }
 
-.hpy_modular.page-micro-main .learn-more {
+.hpy_modular.page-micro .learn-more {
   padding: 55px 0;
   background-image: linear-gradient(to left, #FFFFFF 0%, #F1F1F2 50%, #FFFFFF 100%); }
-  .hpy_modular.page-micro-main .learn-more h3 {
+  .hpy_modular.page-micro .learn-more h3 {
     margin-bottom: 10px !important;
     font-size: 23px; }
 
-.hpy_modular.page-micro-main ul.company-we-keep {
+.hpy_modular.page-micro ul.company-we-keep {
   list-style: none;
   margin: 0;
   padding: 0 !important;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding: 30px 0 10px !important; }
-  .hpy_modular.page-micro-main ul.company-we-keep li {
+  .hpy_modular.page-micro ul.company-we-keep li {
     list-style: none; }
-  .hpy_modular.page-micro-main ul.company-we-keep li img {
+  .hpy_modular.page-micro ul.company-we-keep li img {
     width: auto !important;
     height: 60px; }
-  .hpy_modular.page-micro-main ul.company-we-keep li:last-child img {
+  .hpy_modular.page-micro ul.company-we-keep li:last-child img {
     height: 30px; }
   @media only screen and (max-width: 992px) {
-    .hpy_modular.page-micro-main ul.company-we-keep {
+    .hpy_modular.page-micro ul.company-we-keep {
       flex-wrap: wrap;
       text-align: center;
       width: 100% !important; }
-      .hpy_modular.page-micro-main ul.company-we-keep li {
+      .hpy_modular.page-micro ul.company-we-keep li {
         width: 25%;
         margin-bottom: 20px; } }
   @media only screen and (max-width: 769px) {
-    .hpy_modular.page-micro-main ul.company-we-keep {
+    .hpy_modular.page-micro ul.company-we-keep {
       width: 50%;
       margin-bottom: 20px; } }
 
 @media only screen and (max-width: 992px) {
-  .hpy_modular.page-micro-main .support-security {
+  .hpy_modular.page-micro .support-security {
     height: 1080px; } }
 
-.hpy_modular.page-micro-main .rounded h3 {
+.hpy_modular.page-micro .rounded h3 {
   margin-bottom: 10px;
   font-size: 28px;
   padding: 0 3%; }
 
-.hpy_modular.page-micro-main .rounded img {
+.hpy_modular.page-micro .rounded img {
   display: block;
   margin-bottom: 25px; }
 
-.hpy_modular.page-micro-main .card-flip {
+.hpy_modular.page-micro .card-flip {
   width: 100%; }
-  .hpy_modular.page-micro-main .card-flip .front,
-  .hpy_modular.page-micro-main .card-flip .back {
+  .hpy_modular.page-micro .card-flip .front,
+  .hpy_modular.page-micro .card-flip .back {
     padding: 55px 0; }
-    .hpy_modular.page-micro-main .card-flip .front p,
-    .hpy_modular.page-micro-main .card-flip .back p {
+    .hpy_modular.page-micro .card-flip .front p,
+    .hpy_modular.page-micro .card-flip .back p {
       padding: 0 10px; }
 
-.hpy_modular.page-micro-main #signup-form a.link-arrow {
+.hpy_modular.page-micro #signup-form a.link-arrow {
   border-bottom: 0 !important; }

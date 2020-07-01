@@ -82,6 +82,14 @@
 	
 
 
+.hpy_modular .no-bot-margin {
+	margin-bottom: 0 !important;
+}
+
+.hpy_modular .xs-bot-margin {
+	margin-bottom: 5px !important;
+}
+
 .hpy_modular .sm-bot-margin {
 	margin-bottom: 15px !important;
 }
@@ -167,6 +175,10 @@
 	  @media only screen and (max-width: $responsive-sm) {		
 	    .text-center-sm {
 				text-align: center;
+	    }
+
+	    .text-left-sm {
+	    	text-align: left;
 	    }
 	  }
 	

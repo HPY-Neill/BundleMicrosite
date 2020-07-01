@@ -4,6 +4,12 @@ header img {
 	height: initial !important;
 }
 
+.hpy_logo {
+	&:hover {
+		border-bottom: none;
+	}
+}
+
 .hpy_modular {
 	padding-top: 20px !important;
 }

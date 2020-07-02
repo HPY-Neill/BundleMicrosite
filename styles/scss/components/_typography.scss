@@ -94,6 +94,10 @@
 	margin-bottom: 15px !important;
 }
 
+.hpy_modular .md-bot-margin {
+	margin-bottom: 20px !important;
+}
+
 .hpy_modular .lg-bot-margin {
 	margin-bottom: 30px !important;
 }
@@ -412,7 +416,7 @@
 
 // breaks
 
-@media only screen and (max-width: $responsive-sm) {
+@media only screen and (max-width: $responsive-max) {
 	.hide-break {
 		display: none;
 	}

@@ -1997,6 +1997,9 @@ body {
 .hpy_modular .sm-bot-margin {
   margin-bottom: 15px !important; }
 
+.hpy_modular .md-bot-margin {
+  margin-bottom: 20px !important; }
+
 .hpy_modular .lg-bot-margin {
   margin-bottom: 30px !important; }
 
@@ -2208,7 +2211,7 @@ body {
 .hpy_modular .icon-circle-close {
   background: url("https://prod-heartland.azureedge.net/-/media/heartland/icons/icon-circle-close_grey.svg") center center no-repeat; }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1220px) {
   .hide-break {
     display: none; } }
 
@@ -2326,6 +2329,13 @@ header img {
 #resources .mid-top-card {
   margin-bottom: 20px !important; }
 
+.page-micro .signature p {
+  display: inline-block;
+  margin-bottom: 15px; }
+
+.page-micro .hidden {
+  visibility: hidden !important; }
+
 .page-micro-main .hero-hand-text {
   position: relative !important;
   top: -30px !important;
@@ -2353,12 +2363,18 @@ header img {
   font-size: 20px !important; }
 
 @media only screen and (max-width: 769px) {
+  .testimonial-img {
+    max-width: 385px !important; }
   .sm-flip-1 {
     position: relative;
-    top: 200px; }
+    top: 450px;
+    margin-bottom: 0 !important; }
   .sm-flip-2 {
     position: relative;
-    top: -250px; }
+    top: -200px;
+    margin-bottom: 0 !important; }
+  .test-3 {
+    margin-top: -150px; }
   .test-p {
     font-size: 16px !important; } }
 

@@ -37,6 +37,19 @@ header img {
 	}
 }
 
+.page-micro {
+	.signature {
+		p {
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+	}
+
+	.hidden {
+		visibility: hidden !important;
+	}
+}
+
 .page-micro-main {
 
 	.hero-hand-text {
@@ -85,13 +98,23 @@ header img {
 }
 
 @media only screen and (max-width: $responsive-sm) {
+	.testimonial-img {
+		max-width: 385px !important;
+	}
+
 	.sm-flip-1 {
 		position: relative;
-		top: 200px;
+		top: 450px;
+		margin-bottom: 0 !important;
 	}
 	.sm-flip-2 {
 		position: relative;
-		top: -250px;
+		top: -200px;
+		margin-bottom: 0 !important;
+	}
+
+	.test-3 {
+		margin-top: -150px;
 	}
 	.test-p {
 		font-size: 16px !important;

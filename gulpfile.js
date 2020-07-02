@@ -10,7 +10,7 @@ const gulp = require("gulp"),
 sass.compiler = require("node-sass");
 
 function html() {
-  return gulp.src(dest + "../everything-else.html");
+  return gulp.src(dest + "../home.html");
 }
 
 function js() {
@@ -37,7 +37,7 @@ function styles() {
 function watch() {
   gulp.watch(dest + "../js/scripts.js", js).on("change", browserSync.reload);
   gulp.watch(source + "**/*", styles).on("change", browserSync.reload);
-  gulp.watch(dest + "../everything-else.html", html).on("change", browserSync.reload);
+  gulp.watch(dest + "../home.html", html).on("change", browserSync.reload);
 }
 
 function server() {
@@ -45,7 +45,7 @@ function server() {
     notify: false,
     server: {
       baseDir: "./",
-      index: "everything-else.html"
+      index: "home.html"
     }
   });
 
@@ -53,7 +53,7 @@ function server() {
     .watch(source + "**/*.scss", styles)
     .on("change", browserSync.reload);
   gulp.watch(dest + "../js/scripts.js", js).on("change", browserSync.reload);
-  gulp.watch(dest + "../everything-else.html", html).on("change", browserSync.reload);
+  gulp.watch(dest + "../home.html", html).on("change", browserSync.reload);
 }
 
 var build = gulp.series(gulp.parallel(js, styles, html), server, watch);

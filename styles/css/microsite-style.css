@@ -2336,6 +2336,9 @@ header img {
 .page-micro .hidden {
   visibility: hidden !important; }
 
+.page-micro .test-p {
+  text-indent: -10px; }
+
 .page-micro-main .hero-hand-text {
   position: relative !important;
   top: -30px !important;

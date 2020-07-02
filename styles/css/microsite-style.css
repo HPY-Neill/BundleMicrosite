@@ -2344,6 +2344,12 @@ header img {
   top: -30px !important;
   left: -50px !important; }
 
+.page-micro-main #video {
+  padding-bottom: 0 !important; }
+
+.page-micro-main #testimonials {
+  padding-top: 0 !important; }
+
 .page-micro-retail #resources {
   padding-bottom: 60px; }
 

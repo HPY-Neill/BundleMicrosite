@@ -2371,23 +2371,27 @@ header img {
 
 .page-micro-home-services .hero-hand-text {
   position: relative !important;
-  top: -30px !important;
+  top: -15px !important;
   left: -90px !important; }
 
 .page-micro-restaurants .hero-hand-text {
   position: relative !important;
-  top: -30px !important;
+  top: -15px !important;
   left: -20px !important; }
 
 .page-micro-retail .hero-hand-text {
   position: relative !important;
-  top: -25px !important;
+  top: -15px !important;
   left: -60px !important; }
 
 .page-micro-entertainment .hero-hand-text {
   position: relative !important;
-  top: -65px !important;
+  top: -55px !important;
   left: -40px !important; }
+
+.page-micro-everything-else .hero-hand-text {
+  position: relative !important;
+  top: -15px !important; }
 
 @media only screen and (max-width: 769px) {
   .transformation-text {

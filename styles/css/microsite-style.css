@@ -1090,6 +1090,18 @@ body {
 .hpy_modular.page-micro-retail .hero {
   background-image: url("../../assets/images/retail-hero.jpg"); }
 
+.hpy_modular.page-micro-restaurants .hero {
+  background-image: url("../../assets/images/retail-hero.jpg"); }
+
+.hpy_modular.page-micro-home-services .hero {
+  background-image: url("../../assets/images/retail-hero.jpg"); }
+
+.hpy_modular.page-micro-entertainment .hero {
+  background-image: url("../../assets/images/retail-hero.jpg"); }
+
+.hpy_modular.page-micro-everything-else .hero {
+  background-image: url("../../assets/images/retail-hero.jpg"); }
+
 .hpy_modular.page-restaurant .hero {
   background-image: url("https://prod-heartland.azureedge.net/-/media/heartland/restaurant/rest-hero-q2.jpg"); }
 
@@ -2339,6 +2351,13 @@ header img {
 .page-micro .test-p {
   text-indent: -10px; }
 
+.page-micro #resources {
+  padding-bottom: 60px; }
+
+.page-micro .hero-hand-text {
+  position: relative !important;
+  top: -25px !important; }
+
 .page-micro-main .hero-hand-text {
   position: relative !important;
   top: -30px !important;
@@ -2350,12 +2369,25 @@ header img {
 .page-micro-main #testimonials {
   padding-top: 0 !important; }
 
-.page-micro-retail #resources {
-  padding-bottom: 60px; }
+.page-micro-home-services .hero-hand-text {
+  position: relative !important;
+  top: -30px !important;
+  left: -90px !important; }
+
+.page-micro-restaurants .hero-hand-text {
+  position: relative !important;
+  top: -30px !important;
+  left: -20px !important; }
 
 .page-micro-retail .hero-hand-text {
   position: relative !important;
-  top: -25px !important; }
+  top: -25px !important;
+  left: -60px !important; }
+
+.page-micro-entertainment .hero-hand-text {
+  position: relative !important;
+  top: -65px !important;
+  left: -40px !important; }
 
 @media only screen and (max-width: 769px) {
   .transformation-text {

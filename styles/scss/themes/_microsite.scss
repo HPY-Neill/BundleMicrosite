@@ -52,6 +52,15 @@ header img {
 	.test-p {
 		text-indent: -10px;
 	}
+
+	#resources {
+		padding-bottom: 60px;
+	}
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -25px !important;
+	}
 }
 
 .page-micro-main {
@@ -70,18 +79,44 @@ header img {
 		padding-top: 0 !important;
 	}
 
+}
+
+.page-micro-home-services {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -30px !important;
+		left: -90px !important;
+	}
+
+}
+
+.page-micro-restaurants {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -30px !important;
+		left: -20px !important;
+	}
 
 }
 
 .page-micro-retail {
 
-	#resources {
-		padding-bottom: 60px;
-	}
-
 	.hero-hand-text {
 		position: relative !important;
 		top: -25px !important;
+		left: -60px !important;
+	}
+
+}
+
+.page-micro-entertainment {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -65px !important;
+		left: -40px !important;
 	}
 
 }

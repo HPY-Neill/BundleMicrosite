@@ -1,5 +1,39 @@
-// MAIN MICROSITE PAGE
- 
+// MICROSITE
+
+@keyframes header-text {
+	0% {
+		background-image: url(../../assets/images/homepage-animated-text/home-text-1.png);
+	}
+	25% {
+		background-image: url(../../assets/images/homepage-animated-text/home-text-2.png);
+	}
+	50% {
+		background-image: url(../../assets/images/homepage-animated-text/home-text-3.png);
+	}
+	75% {
+		background-image: url(../../assets/images/homepage-animated-text/home-text-4.png);
+	}
+	100% {
+		background-image: url(../../assets/images/homepage-animated-text/home-text-5.png);
+	}
+}
+
+.animated-text {
+	width: 504px;
+	height: 180px;
+	animation-name: header-text;
+	animation-delay: 2s;
+	animation-duration: 12s;
+	animation-fill-mode: forwards;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(../../assets/images/homepage-animated-text/home-text-1.png);
+	position: relative;
+	transform: translate(-20px, -30px);
+
+}
+
 header img {
 	height: initial !important;
 }
@@ -64,12 +98,6 @@ header img {
 }
 
 .page-micro-main {
-
-	.hero-hand-text {
-		position: relative !important;
-		top: -30px !important;
-		left: -50px !important;
-	}
 
 	#video {
 		padding-bottom: 0 !important;

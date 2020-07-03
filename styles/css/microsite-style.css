@@ -2317,6 +2317,48 @@ footer#footer-modular {
     footer#footer-modular .copyright p {
       margin-top: 0; } }
 
+@-webkit-keyframes header-text {
+  0% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-1.png); }
+  25% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-2.png); }
+  50% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-3.png); }
+  75% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-4.png); }
+  100% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-5.png); } }
+
+@keyframes header-text {
+  0% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-1.png); }
+  25% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-2.png); }
+  50% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-3.png); }
+  75% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-4.png); }
+  100% {
+    background-image: url(../../assets/images/homepage-animated-text/home-text-5.png); } }
+
+.animated-text {
+  width: 504px;
+  height: 180px;
+  -webkit-animation-name: header-text;
+  animation-name: header-text;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../../assets/images/homepage-animated-text/home-text-1.png);
+  position: relative;
+  transform: translate(-20px, -30px); }
+
 header img {
   height: initial !important; }
 
@@ -2357,11 +2399,6 @@ header img {
 .page-micro .hero-hand-text {
   position: relative !important;
   top: -25px !important; }
-
-.page-micro-main .hero-hand-text {
-  position: relative !important;
-  top: -30px !important;
-  left: -50px !important; }
 
 .page-micro-main #video {
   padding-bottom: 0 !important; }

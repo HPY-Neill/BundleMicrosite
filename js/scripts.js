@@ -1,3 +1,12 @@
+// // delay css animation
+// let animate = document.querySelector('.animate-this');
+
+// setTimeout(addAnimation, 2000);
+
+// function addAnimation() {
+//   animate.className = 'animated-text';
+// }
+
 $(document).ready(function(){   
   // show hide navigation
   $('.hamburger-icon').on('click', function() {

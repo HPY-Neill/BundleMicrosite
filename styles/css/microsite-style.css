@@ -2346,6 +2346,10 @@ header img {
 .page-micro .hero h1 {
   font-size: 72px; }
 
+@media only screen and (max-width: 769px) {
+  .page-micro .hero h1 {
+    font-size: 62px; } }
+
 .page-micro .signature p {
   display: inline-block;
   margin-bottom: 15px; }

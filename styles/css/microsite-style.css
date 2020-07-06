@@ -2352,6 +2352,8 @@ footer#footer-modular {
   animation-duration: 12s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;

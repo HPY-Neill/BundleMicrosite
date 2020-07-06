@@ -25,13 +25,13 @@
 	animation-delay: 2s;
 	animation-duration: 12s;
 	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image: url(../../assets/images/homepage-animated-text/home-text-1.png);
 	position: relative;
 	transform: translate(-20px, -30px);
-
 }
 
 header img {

@@ -38,6 +38,13 @@ header img {
 }
 
 .page-micro {
+	
+	.hero {
+		h1 {
+			font-size: 72px;
+		}
+	}
+
 	.signature {
 		p {
 			display: inline-block;
@@ -60,6 +67,39 @@ header img {
 	.hero-hand-text {
 		position: relative !important;
 		top: -25px !important;
+	}
+
+	.form-pardot {
+
+		.slides {
+			transition: all .2s linear;
+		}
+
+		.slide-in, .in {
+			position: initial;
+			height: initial;
+		}
+
+		.slide-out, .out {
+			position: relative !important;
+			left: -99999px !important;
+			height: 0 !important;
+		}
+
+		.checkbox-label {
+			font-size: .8em !important;
+			margin: 0 !important;
+			padding-left: 0 !important;
+			display: inline-block !important;
+		}
+
+		.checkbox {
+			margin-bottom: 40px;
+
+			input {
+				margin: 0;
+			}
+		}
 	}
 
 	@media only screen and (max-width: $responsive-sm) {

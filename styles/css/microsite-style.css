@@ -1265,6 +1265,8 @@ body {
   .hpy_modular .form-pardot .button {
     margin-bottom: 20px !important;
     font-family: "Arial", sans-serif !important; }
+  .hpy_modular .form-pardot .no-bot-margin {
+    margin-bottom: 0 !important; }
   .hpy_modular .form-pardot a {
     color: #383D42;
     border-color: #383D42; }
@@ -2341,6 +2343,9 @@ header img {
 #resources .mid-top-card {
   margin-bottom: 20px !important; }
 
+.page-micro .hero h1 {
+  font-size: 72px; }
+
 .page-micro .signature p {
   display: inline-block;
   margin-bottom: 15px; }
@@ -2357,6 +2362,29 @@ header img {
 .page-micro .hero-hand-text {
   position: relative !important;
   top: -25px !important; }
+
+.page-micro .form-pardot .slides {
+  transition: all .2s linear; }
+
+.page-micro .form-pardot .slide-in, .page-micro .form-pardot .in {
+  position: initial;
+  height: initial; }
+
+.page-micro .form-pardot .slide-out, .page-micro .form-pardot .out {
+  position: relative !important;
+  left: -99999px !important;
+  height: 0 !important; }
+
+.page-micro .form-pardot .checkbox-label {
+  font-size: .8em !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  display: inline-block !important; }
+
+.page-micro .form-pardot .checkbox {
+  margin-bottom: 40px; }
+  .page-micro .form-pardot .checkbox input {
+    margin: 0; }
 
 @media only screen and (max-width: 769px) {
   .page-micro .sm-left-margin {

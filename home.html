@@ -14,7 +14,7 @@
 
 	<!-- Links --->
 	<link rel="shortcut icon" type="image/x-icon" href="https://prod-heartland.azureedge.net/-/media/heartland/icons/faviconpng.png?modified=20180306195634" />
-	<link rel="stylesheet" href="https://go.heartlandpaymentsystems.com/l/125771/2020-07-06/7ck8dz/125771/134145/microsite_style.css">
+	<link rel="stylesheet" href="styles/css/microsite-style.css">
 
 	<!-- Google Tag Manager/Analytics -->
 	<script>
@@ -63,7 +63,7 @@
 			<div class="col-5 col-sm-12">
 				<form class="developer-signup form-pardot" action="http://go.heartlandpaymentsystems.com/l/125771/2020-03-09/78dbgp" method="post">
 					
-					<div class="hpy_grid">
+					<div id="step1box" class="hpy_grid slides in">
 
 						<div class="col-6">
 							<div class="form-group">
@@ -84,7 +84,7 @@
 						</div>
 						
 
-						<div class="col-6">
+						<div class="col-6 md-bot-margin">
 
 							<div class="form-group">
 								<label for="lastname" class="text-dark-blue">Last name</label>
@@ -103,23 +103,290 @@
 							
 						</div>
 
+						<button id="step1button" class="button button-red button-full link-arrow link-arrow_white ">Go to the next step</button>
+						<div class="hidden col-12 text-center">
+							<a class="link-arrow link-arrow_back">Back</a>
+						</div>
+						
+					</div>	
+
+					<div id="step2box" class="hpy_grid slides out">
+
 						<div class="col-12">
 
 							<label for="00N2M00000exNfU">Collection</label>
 
 							<div class="styled-select">
-								<select id="00N2M00000exNfU" name="00N2M00000exNfU" title="Choose your bundle" class="form-control">
+								<select id="collections" name="00N2M00000exNfU" title="Choose your Collection" class="form-control choose-collection">
 									<option value="">Choose your collection</option>
 									<option value="Retail">Retail</option>
 									<option value="Restaurant">Restaurant</option>
 									<option value="Home Service">Home Service</option>
 									<option value="Entertainment">Entertainment</option>
+									<option value="Everything Else">Everything Else</option>
 								</select>
 							</div>
 
 						</div>
 						
-					</div>				
+						<div class="empty-slide slides slide-in col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Payments</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Mobile Payments</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Register or POS</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Virtual Gift</label>
+								</div>
+
+							</div>
+
+						</div><div class="retail-slide slides slide-out col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Mobile Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Register or POS</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Virtual Gift</label>
+								</div>
+
+							</div>
+
+						</div>
+						
+						<div class="restaurant-slide slides slide-out col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Odering</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Mobile Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Point of Sale</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Virtual Gift</label>
+								</div>
+
+							</div>
+
+						</div>
+						
+						<div class="home-services-slide slides slide-out col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Ordering</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Heartland for Service Professionals</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Heartland for Service Professionals</label>
+								</div>
+
+								<div class="checkbox hidden">
+									<input type="checkbox">
+									<label class="checkbox-label">Virtual Gift</label>
+								</div>
+
+							</div>
+
+						</div>
+						
+						<div class="entertainment-slide slides slide-out col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Mobile Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Register or Terminal&plus;</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Surcharge</label>
+								</div>
+
+							</div>
+
+						</div>
+						
+						<div class="everything-else-slide slides slide-out col-12 hpy_grid">
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Register or Terminal&plus;</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Online Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Email Marketing</label>
+								</div>
+
+							</div>
+
+							<div class="col-6">
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Payroll &plus; HR Support</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Mobile Payments</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox">
+									<label class="checkbox-label">Surcharge</label>
+								</div>
+
+							</div>
+
+						</div>
+					
+						<button id="step2button" class="button button-red button-full link-arrow link-arrow_white">Get Started Now</button>
+						<div class="col-12 text-center">
+							<a id="back-btn" class="link-arrow link-arrow_back">Back</a>
+						</div>
+						
+
+						
+					</div>			
 
 					<div style="position:absolute; left:-9999px; top: -9999px;">
 					    <label for="pardot_extra_field">Comments</label>
@@ -127,8 +394,7 @@
 					</div>
 					
 					<div id="form-Sales-Get-in-touch-message" class="form-message" style="clear:both"></div>
-					
-					<button id="button" class="button button-red button-full link-arrow link-arrow_white">Get Started Now</button>
+
 			    <input style="display: none;" type="submit" class="btn btn-primary btn-lg submit-2" />		
 					
 					<input type="hidden" class="redirectonsuccess" value="https://www.heartlandpaymentsystems.com/online-payments/thank-you">
@@ -287,7 +553,7 @@
 			<div class="col-12 text-center">
 				<br />
 				<br />
-				<a href="#form" class="button lg-btn button-red link-arrow link-arrow_white">Get Started Now</a>
+				<a href="#form" class="button button-red link-arrow link-arrow_white">Get Started Now</a>
 			</div>
 		</div>
 	</section>
@@ -342,7 +608,7 @@
 							<div class="col-2 col-sm-1"></div>
 
 							<div class="col-12 button-container text-center">
-								<a href="http://go.heartlandpaymentsystems.com/communityconnected/retail" class="button lg-btn jump-link link-arrow link-arrow_white">Explore Retail</a>
+								<a href="http://go.heartlandpaymentsystems.com/communityconnected/retail" class="button jump-link link-arrow link-arrow_white">Explore Retail</a>
 							</div>
 
 						</div>
@@ -375,7 +641,7 @@
 							<div class="col-2 col-sm-1"></div>
 
 							<div class="col-12 button-container text-center">
-								<a href="http://go.heartlandpaymentsystems.com/communityconnected/restaurant" class="button button-green lg-btn jump-link link-arrow link-arrow_white">Explore Restaurant</a>
+								<a href="http://go.heartlandpaymentsystems.com/communityconnected/restaurant" class="button button-green jump-link link-arrow link-arrow_white">Explore Restaurant</a>
 							</div>
 
 						</div>
@@ -408,7 +674,7 @@
 							<div class="col-2 col-sm-1"></div>
 
 							<div class="col-12 button-container text-center">
-								<a href="http://go.heartlandpaymentsystems.com/communityconnected/home-services" class="button button-purple lg-btn jump-link link-arrow link-arrow_white">Explore Home Services</a>
+								<a href="http://go.heartlandpaymentsystems.com/communityconnected/home-services" class="button button-purple jump-link link-arrow link-arrow_white">Explore Home Services</a>
 							</div>
 						
 					</section>			
@@ -439,7 +705,7 @@
 							<div class="col-2 col-sm-1"></div>
 
 							<div class="col-12 button-container text-center">
-								<a href="http://go.heartlandpaymentsystems.com/communityconnected/entertainment" class="button button-yellow lg-btn jump-link link-arrow link-arrow_white">Explore Entertainment</a>
+								<a href="http://go.heartlandpaymentsystems.com/communityconnected/entertainment" class="button button-yellow jump-link link-arrow link-arrow_white">Explore Entertainment</a>
 							</div>
 						
 					</section>	
@@ -679,7 +945,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	<script src="https://go.heartlandpaymentsystems.com/l/125771/2020-07-06/7ck8b8/125771/134125/modals.js"></script>
-	<script src="https://go.heartlandpaymentsystems.com/l/125771/2020-07-06/7ck8bb/125771/134127/scripts.js"></script>
+	<script src="js/scripts.js"></script>
 	
 	<!-- responsive slides -->
 	<script>

@@ -64,6 +64,10 @@
 		margin-bottom: 20px !important;
 		font-family: "Arial", sans-serif !important;
 	}
+
+	.no-bot-margin {
+		margin-bottom: 0 !important; 
+	}
 	
 	a {
 		color: $primary-text-color;

@@ -181,6 +181,16 @@ header img {
 
 }
 
+.page-micro-everything-else, .page-micro-entertainment, .page-micro-home-services, .page-micro-restaurants, .page-micro-retail, .page-micro-main {
+
+	@media only screen and (max-width: $responsive-lg) {
+		.hero-hand-text {
+			left: -10px !important;
+		}
+	}
+
+}
+
 @media only screen and (max-width: $responsive-sm) {
 	
 	.transformation-text {

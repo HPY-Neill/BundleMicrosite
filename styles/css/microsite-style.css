@@ -1971,10 +1971,10 @@ body {
   margin-bottom: 16px !important; }
   @media only screen and (max-width: 992px) {
     .hpy_modular h1 {
-      font-size: 55px; } }
+      font-size: 55px !important; } }
   @media only screen and (max-width: 769px) {
     .hpy_modular h1 {
-      font-size: 42px; } }
+      font-size: 42px !important; } }
 
 .hpy_modular h2 {
   font-size: 45px;
@@ -2425,6 +2425,10 @@ header img {
 .page-micro-everything-else .hero-hand-text {
   position: relative !important;
   top: -15px !important; }
+
+@media only screen and (max-width: 1024px) {
+  .page-micro-everything-else .hero-hand-text, .page-micro-entertainment .hero-hand-text, .page-micro-home-services .hero-hand-text, .page-micro-restaurants .hero-hand-text, .page-micro-retail .hero-hand-text, .page-micro-main .hero-hand-text {
+    left: -10px !important; } }
 
 @media only screen and (max-width: 769px) {
   .transformation-text {

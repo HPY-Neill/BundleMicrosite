@@ -2358,6 +2358,10 @@ header img {
   position: relative !important;
   top: -25px !important; }
 
+@media only screen and (max-width: 769px) {
+  .page-micro .sm-left-margin {
+    margin-left: 50px; } }
+
 .page-micro-main .hero-hand-text {
   position: relative !important;
   top: -30px !important;

@@ -61,6 +61,14 @@ header img {
 		position: relative !important;
 		top: -25px !important;
 	}
+
+	@media only screen and (max-width: $responsive-sm) {
+
+		.sm-left-margin {
+			margin-left: 50px;
+		}
+
+	}
 }
 
 .page-micro-main {

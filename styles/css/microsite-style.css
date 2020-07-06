@@ -2367,13 +2367,10 @@ header img {
   transition: all .2s linear; }
 
 .page-micro .form-pardot .slide-in, .page-micro .form-pardot .in {
-  position: initial;
-  height: initial; }
+  display: default; }
 
 .page-micro .form-pardot .slide-out, .page-micro .form-pardot .out {
-  position: relative !important;
-  left: -99999px !important;
-  height: 0 !important; }
+  display: none; }
 
 .page-micro .form-pardot .checkbox-label {
   font-size: .8em !important;

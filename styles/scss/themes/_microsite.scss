@@ -76,14 +76,11 @@ header img {
 		}
 
 		.slide-in, .in {
-			position: initial;
-			height: initial;
+			display: default;
 		}
 
 		.slide-out, .out {
-			position: relative !important;
-			left: -99999px !important;
-			height: 0 !important;
+			display: none;
 		}
 
 		.checkbox-label {

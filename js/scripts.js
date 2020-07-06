@@ -35,31 +35,32 @@ function setListeners() {
   backBtn.addEventListener('click', function() {
     stepTwo.className = 'hpy_grid out';
     stepOne.className = 'hpy_grid in';
+    dropMenu.selectedIndex = 0;
+    slide(document.querySelector('.empty-slide'));
   }, false);
   dropMenu.addEventListener('change', function() {
-    showCheckBoxes(dropMenu.value);
+    showCheckBoxes(dropMenu.selectedIndex);
   }, false);
 }
 
 function showCheckBoxes(value) {
-  if (value == '') {
+  if (value == 0) {
     slide(document.querySelector('.empty-slide'));
-  } else if (value == 'Retail') {
+  } else if (value == 1) {
     slide(document.querySelector('.retail-slide'));
-  } else if (value == 'Restaurant') {
+  } else if (value == 2) {
     slide(document.querySelector('.restaurant-slide'));
-  } else if (value == 'Home Services') {
+  } else if (value == 3) {
     slide(document.querySelector('.home-services-slide'));
-  } else if (value == 'Entertainment') {
+  } else if (value == 4) {
     slide(document.querySelector('.entertainment-slide'));
-  } else if (value == 'Everything Else') {
+  } else if (value == 5) {
     slide(document.querySelector('.everything-else-slide'));
   }
 }
 
 function slide(slideIn) {
   let slideOut = document.querySelector('.slide-in');
-  console.log(slideOut);
   slideOut.classList.add('slide-out');
   slideOut.classList.remove('slide-in');
   slideIn.classList.remove('slide-out');

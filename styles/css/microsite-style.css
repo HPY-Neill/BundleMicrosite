@@ -2468,7 +2468,9 @@ header img {
 
 @media only screen and (max-width: 500px) {
   .sm-flip-2 {
-    top: -300px; } }
+    top: -300px; }
+  .testimonial-img {
+    max-width: 100% !important; } }
 
 .hpy_modular.page-micro #topper {
   padding-bottom: 0; }

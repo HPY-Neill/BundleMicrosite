@@ -1,9 +1,13 @@
 // stepped form
 let url = window.location.href;
 let form = document.getElementById('form');
+let cta = document.querySelectorAll('.CTA');
 
 if (url.includes('partner')) {
   form.className = 'hidden';
+  for (i = 0; i < cta.length; i++) {
+    cta[i].className = 'hidden';
+  }
 } else {
   let nextBtn = document.getElementById('step1button');
   let stepOne = document.getElementById('step1box');
